@@ -21,18 +21,45 @@ namespace AutomationUsingSelenium_1
 
         [TestMethod]
         [TestCategory("Login")]
-        public void TestMethod001()
+        [DataRow("Jaffarabbas","Jaffarabbas", "auth_error", "Invalid Login details or Your Password might have expired. Click here to reset your password")]
+        public void LoginWithInvalidUserNameAndPassowordTC01(string username,string password,string locator,string expectedMessage)
         {
             LoadTest();
-            driver.FindElement(By.Id("username")).SendKeys("JaffarAbbas");
-            driver.FindElement(By.Name("password")).SendKeys("JaffarAbbas");
+            driver.FindElement(By.Id("username")).SendKeys(username);
+            driver.FindElement(By.Name("password")).SendKeys(password);
             driver.FindElement(By.ClassName("login_button")).Click();
-            //driver.Close();
+            string value = driver.FindElement(By.ClassName(locator)).Text;
+            Assert.AreEqual(expectedMessage, value, "Assertion Faild");
+            driver.Close();
         }
 
         [TestMethod]
-        public void TestMethod002()
+        [TestCategory("Login")]
+        [DataRow("jaffarabbas", "jaffarabbas", "welcome_menu", "Welcome to Adactin Group of Hotels")]
+        public void LoginWithValidUserNameAndPassowordTC02(string username, string password, string locator, string expectedMessage)
         {
+            LoadTest();
+            driver.FindElement(By.Id("username")).SendKeys(username);
+            driver.FindElement(By.Name("password")).SendKeys(password);
+            driver.FindElement(By.ClassName("login_button")).Click();
+            string value = driver.FindElement(By.ClassName(locator)).Text;
+            Assert.AreEqual(expectedMessage, value, "Assertion Faild");
+            driver.Close();
+        }
+
+        [TestMethod]
+        [TestCategory("Login")]
+        [DataRow("jaffarabbas", "jaffarabbas", "welcome_menu", "Welcome to Adactin Group of Hotels")]
+        [DataRow("Jaffarabbas", "Jaffarabbas", "auth_error", "Invalid Login details or Your Password might have expired. Click here to reset your password")]
+        public void LoginCombineTC03(string username, string password, string locator, string expectedMessage)
+        {
+            LoadTest();
+            driver.FindElement(By.Id("username")).SendKeys(username);
+            driver.FindElement(By.Name("password")).SendKeys(password);
+            driver.FindElement(By.ClassName("login_button")).Click();
+            string value = driver.FindElement(By.ClassName(locator)).Text;
+            Assert.AreEqual(expectedMessage, value, "Assertion Faild");
+            driver.Close();
         }
     }
 }
