@@ -25,7 +25,12 @@
       "ProjectGuid": "a49c10f9-4fb5-43d6-ba3f-af41731e2d9c",
       "DisplayName": "MultipleBrowser",
       "ColorIndex": 4
+    },
+    "cc3f5d5e-c1c7-4f58-9c4f-3f93d56ac708": {
+      "ProjectGuid": "cc3f5d5e-c1c7-4f58-9c4f-3f93d56ac708",
+      "DisplayName": "DropDownTesting",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
