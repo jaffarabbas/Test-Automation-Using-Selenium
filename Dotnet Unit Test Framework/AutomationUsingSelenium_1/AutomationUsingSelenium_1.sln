@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleBrowser", "Multiple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownTesting", "DropDownTesting\DropDownTesting.csproj", "{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageObjectModel", "PageObjectModel\PageObjectModel.csproj", "{C4B7BC38-6D43-419E-A5AA-479F62CB7D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B7BC38-6D43-419E-A5AA-479F62CB7D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B7BC38-6D43-419E-A5AA-479F62CB7D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B7BC38-6D43-419E-A5AA-479F62CB7D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B7BC38-6D43-419E-A5AA-479F62CB7D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
