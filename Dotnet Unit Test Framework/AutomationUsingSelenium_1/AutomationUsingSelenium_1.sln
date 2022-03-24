@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLessExecution", "HeadLe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleBrowser", "MultipleBrowser\MultipleBrowser.csproj", "{A49C10F9-4FB5-43D6-BA3F-AF41731E2D9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownTesting", "DropDownTesting\DropDownTesting.csproj", "{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A49C10F9-4FB5-43D6-BA3F-AF41731E2D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A49C10F9-4FB5-43D6-BA3F-AF41731E2D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A49C10F9-4FB5-43D6-BA3F-AF41731E2D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3F5D5E-C1C7-4F58-9C4F-3F93D56AC708}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
