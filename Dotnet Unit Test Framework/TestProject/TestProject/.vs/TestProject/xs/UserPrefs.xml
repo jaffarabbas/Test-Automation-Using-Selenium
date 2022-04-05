@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{054294B4-7137-4745-859A-2DA3E9FDEC80}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestProject/Logn.cs">
+    <Files>
+      <File FileName="TestProject/Logn.cs" Line="39" Column="1" />
+      <File FileName="TestProject/EmptyClass.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestProject" expanded="True">
+            <Node name="TestProject" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Logn.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TestProject" expanded="True">
+            <Node name="TestProject" expanded="True">
+              <Node name="TestProject" expanded="True">
+                <Node name="Login" expanded="True">
+                  <Node name="HotelLogin" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TestProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/saadsaghir/Projects/TestProject/TestProject/Logn.cs" relfile="TestProject/Logn.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,198 @@
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.pdb
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/nunit.engine.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/nunit.engine.api.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/TestProject.deps.json
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/TestProject.runtimeconfig.json
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/TestProject.runtimeconfig.dev.json
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/TestProject.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/TestProject.pdb
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.DotNet.InternalAbstractions.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/testhost.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/nunit.framework.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/WebDriver.Support.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/WebDriver.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.csproj.AssemblyReference.cache
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.AssemblyInfoInputs.cache
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.AssemblyInfo.cs
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.csproj.CoreCompileInputs.cache
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.csproj.CopyComplete
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.dll
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.pdb
+/Users/saadsaghir/Projects/TestProject/TestProject/obj/Debug/netcoreapp3.1/TestProject.genruntimeconfig.cache
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\nunit.engine.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\TestProject.deps.json
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\TestProject.runtimeconfig.json
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\TestProject.runtimeconfig.dev.json
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\TestProject.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\TestProject.pdb
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\testhost.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\nunit.framework.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\WebDriver.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.csproj.AssemblyReference.cache
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.AssemblyInfoInputs.cache
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.AssemblyInfo.cs
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.csproj.CoreCompileInputs.cache
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.csproj.CopyComplete
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.pdb
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\obj\Debug\netcoreapp3.1\TestProject.genruntimeconfig.cache
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+D:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestProject\TestProject\TestProject\bin\Debug\netcoreapp3.1\testcentric.engine.metadata.dll
