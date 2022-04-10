@@ -20,7 +20,7 @@ namespace TestAutomationFramework.TestCases
         [TestMethod]
         public void TestMethod1()
         {
-            LoadDriverInitialiazer.LoadWebDriver("Chrome");
+            LoadDriverInitialiazer.LoadWebDriver(ConfigurationManager.AppSettings.Get("ChromeBrowser"));
             loginPageMethods.Login("https://opensource-demo.orangehrmlive.com/index.php/auth/login","","");
         }
     }
