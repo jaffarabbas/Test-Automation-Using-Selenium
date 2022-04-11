@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Automation>
+	<Urls>
+		<MainUrl>
+			<url1>https://opensource-demo.orangehrmlive.com/index.php/auth/login</url1>
+		</MainUrl>
+	</Urls>
 	<Execution>		
 		<Login>
 			<username>jaffarabbas</username>

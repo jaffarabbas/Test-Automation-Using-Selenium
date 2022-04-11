@@ -20,7 +20,7 @@ namespace LoadDriver
                 if (driverType == "Chrome")
                 {
                     var chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArguments("--start-maximized");
+                    chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get("MaximizeBrowserSize"));
                     IWebDriver chromeDriver = new ChromeDriver(chromeOptions);
                     jsDriver = chromeDriver as IJavaScriptExecutor;
                     driver = chromeDriver;

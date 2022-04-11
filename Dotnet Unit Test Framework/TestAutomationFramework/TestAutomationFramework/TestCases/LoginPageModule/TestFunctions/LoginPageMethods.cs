@@ -9,7 +9,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 {
     public class LoginPageMethods : LoadDriverInitialiazer
     {
-        public void Login(string url,string username,string password)
+        public void Login(string url,string username,string password,string message,string locator)
         {
             driver.Url = url;
         }

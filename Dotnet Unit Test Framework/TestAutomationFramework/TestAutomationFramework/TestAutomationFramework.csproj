@@ -81,6 +81,7 @@
     <Compile Include="TestCases\LoginPageModule\TestFunctions\LoginPageMethods.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="DataClass\Data.config" />
     <None Include="packages.config" />
   </ItemGroup>
