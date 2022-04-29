@@ -12,6 +12,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
         public void Login(string url,string username,string password,string message,string locator)
         {
             driver.Url = url;
+            Console.WriteLine(url);
         }
     }
 }
