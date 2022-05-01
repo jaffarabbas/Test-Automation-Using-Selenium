@@ -8,6 +8,8 @@ namespace TestAutomationFramework.Constants
 {
     public class ApplicationConstant
     {
+        #region XML Constants
+
         /// <summary>
         /// xml connection string for data driven
         /// </summary>
@@ -15,6 +17,14 @@ namespace TestAutomationFramework.Constants
         /// <summary>
         /// xml path for data driven
         /// </summary>
-        public const string xmlPath = @"DataClass\data.xml";
+        public const string xmlPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\DataClass\data.xml";
+
+        #endregion
+
+        #region AUT (Application Under Test) Urls
+
+        public const string mainUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
+
+        #endregion
     }
 }

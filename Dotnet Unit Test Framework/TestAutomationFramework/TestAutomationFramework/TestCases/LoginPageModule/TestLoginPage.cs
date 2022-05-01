@@ -8,6 +8,8 @@ using TestAutomationFramework.TestCases.LoginPage.TestFunctions;
 using LoadDriver;
 using TestAutomationFramework.Constants;
 using System.Windows.Forms;
+using System.Data;
+using TestAutomationFramework.LocatersMethods;
 
 namespace TestAutomationFramework.TestCases
 {
@@ -19,25 +21,24 @@ namespace TestAutomationFramework.TestCases
     {
         #region Instance Properties
 
-        //public static string browserConnection;
-        public static string url;
-        //public static string username;
-        //public static string password;
-        //public static string locator;
-        //public static string message;
+        public static string browserConnection;
+        public string username;
+        public string password;
+        public string locator;
+        public string message;
 
 
         /// <summary>
         /// Object instances
         /// </summary>
-        //public static LoginPageMethods loginPageMethods;
+        public static LoginPageMethods loginPageMethods;
 
         #endregion
 
         #region Text Context Inititalization
 
-        public static TestContext instance;
-        public static TestContext TestContext
+        public TestContext instance;
+        public TestContext TestContext
         {
             set { instance = value; }
             get { return instance; }
@@ -50,7 +51,7 @@ namespace TestAutomationFramework.TestCases
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
-            MessageBox.Show("Ass");
+            
         }
 
         [AssemblyCleanup]
@@ -62,8 +63,8 @@ namespace TestAutomationFramework.TestCases
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            
-            MessageBox.Show("Class");
+            browserConnection = ConfigurationManager.AppSettings.Get("ChromeBrowser");
+            loginPageMethods = new LoginPageMethods();
         }
 
         [ClassCleanup]
@@ -76,7 +77,11 @@ namespace TestAutomationFramework.TestCases
         [TestInitialize]
         public void TestInit()
         {
-
+            username = TestContext.DataRow["username"].ToString();
+            password = TestContext.DataRow["password"].ToString();
+            message = TestContext.DataRow["message"].ToString();
+            locator = TestContext.DataRow["locator"].ToString();
+            MessageBox.Show(locator);
         }
 
         [TestCleanup]
@@ -89,28 +94,12 @@ namespace TestAutomationFramework.TestCases
 
         [TestMethod]
         [TestCategory("Login")]
-        //[DataSource(ApplicationConstant.xmlConnectionString, @"TestAutomationFramework\DataClass\data.xml", "Automation", DataAccessMethod.Sequential)]
+        [DataSource(ApplicationConstant.xmlConnectionString, ApplicationConstant.xmlPath,"Login", DataAccessMethod.Sequential)]
         [Description("successfull login test with postive test data")]
         public void TestLoginWithPositiveData001()
         {
-            //browserConnection = ConfigurationManager.AppSettings.Get("ChromeBrowser");
-            url = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
-            //username = TestContext.DataRow["username"].ToString();
-            //password = TestContext.DataRow["password"].ToString();
-            //message = TestContext.DataRow["message"].ToString();
-            //locator = TestContext.DataRow["locator"].ToString();
-            //loginPageMethods = new LoginPageMethods();
-            LoginPageMethods loginPage = new LoginPageMethods();
-            LoadDriverInitialiazer.LoadWebDriver("Chrome");
-            //Console.WriteLine(url+"\n"+username+"\n"+password+"\n"+message+"\n"+message);
-            loginPage.Login(url, "", "", "", "");
-        }
-        [TestMethod]
-        public void tes()
-        {
-            //LoadDriverInitialiazer.LoadWebDriver(browserConnection);
-            //LoginPageMethods loginPage = new LoginPageMethods();
-            //loginPage.Login(url, username, password, message, locator);
+            LoadDriverInitialiazer.LoadWebDriver(browserConnection);
+            loginPageMethods.Login(ApplicationConstant.mainUrl, username , password);
         }
     }
 }

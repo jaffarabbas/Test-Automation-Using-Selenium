@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Automation>
-	<Urls>
-		<MainUrl>
-			<url1>https://opensource-demo.orangehrmlive.com/index.php/auth/login</url1>
-		</MainUrl>
-	</Urls>
-	<Execution>		
+	<Execution>
 		<Login>
-			<username>jaffarabbas</username>
-			<password>jaffarabbas</password>
-			<message>Welcome to Adactin Group of Hotels</message>
-			<locator>welcome_menu</locator>
-		</Login>
-		
-		<Login>
-			<username>user1</username>
-			<password>test123</password>
-			<message>Invalid Login details or Your Password might have expired. Click here to reset your password</message>
-			<locator>auth_error</locator>
+			<username>Admin</username>
+			<password>admin123</password>
+			<message>Welcome Paul</message>
+			<locator>welcome</locator>
 		</Login>
 	</Execution>
 </Automation>
