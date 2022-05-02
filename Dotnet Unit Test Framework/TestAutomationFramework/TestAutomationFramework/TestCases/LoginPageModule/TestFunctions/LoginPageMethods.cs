@@ -13,13 +13,24 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 {
     public class LoginPageMethods : LoadDriverInitialiazer
     {
-        public void Login(string url,string username,string password)
+        public void Login(Dictionary<string,string> attributes)
         {
-            driver.Url = url;
+            driver.Url = attributes["url"];
             Dictionary<string,By> loginLocators = LocatorsMethods.SetByLoacator("input","id");
-            LocatorsMethods.SetSendKeys(loginLocators["txtUsername"],username);
-            LocatorsMethods.SetSendKeys(loginLocators["txtPassword"],password);
+            LocatorsMethods.SetSendKeys(loginLocators["txtUsername"],attributes["username"]);
+            LocatorsMethods.SetSendKeys(loginLocators["txtPassword"],attributes["password"]);
             LocatorsMethods.SetClick(loginLocators["btnLogin"]);
+            LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("input", "id"));
+            LocatorsMethods.ClearDictionary(loginLocators);
+        }
+
+        public string CheckPageIsNavigate()
+        {
+            Dictionary<string, By> dashboardLocators = LocatorsMethods.SetByLoacator("a", "id");
+            var messageValue = LocatorsMethods.GetText(dashboardLocators["welcome"]);
+            LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("a", "id"));
+            LocatorsMethods.ClearDictionary(dashboardLocators);
+            return messageValue;
         }
     }
 }
