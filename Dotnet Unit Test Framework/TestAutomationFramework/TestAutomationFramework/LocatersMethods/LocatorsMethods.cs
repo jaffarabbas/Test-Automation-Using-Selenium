@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,15 +24,33 @@ namespace TestAutomationFramework.LocatersMethods
             var tagPicker = driver.FindElements(By.TagName(tagName));
             foreach(WebElement tag in tagPicker)
             {
-                if(attribute == "id")
-                {
-                    locaterDictionary.Add(tag.GetAttribute(attribute).ToString(),By.Id(tag.GetAttribute(attribute).ToString()));
-                }
+                string dictionaryData = tag.GetAttribute(attribute).ToString();
+                //validation to remove redendency in the dictionary datastructure
+                bool dictionaryValidation = dictionaryData != "" && dictionaryData != null && !locaterDictionary.ContainsKey(dictionaryData);
+                if (attribute == "id")
+                    SetLocaterByDictionary(dictionaryData,By.Id(dictionaryData),dictionaryValidation,locaterDictionary);
+                else if (attribute == "class")
+                    SetLocaterByDictionary(dictionaryData, By.ClassName(dictionaryData), dictionaryValidation, locaterDictionary);
             }
             return locaterDictionary;
         }
 
-        public static void SetSendKeys(By attribute,string value)
+        //function to add locator in dictionary
+        public static void SetLocaterByDictionary(string key, By value, bool validation, Dictionary<string, By> locaterDictionary)
+        {
+            if (validation)
+                locaterDictionary.Add(key, value);
+        }
+
+        //clear the dictionary
+        public static void ClearDictionary(Dictionary<string,By> locaterDictionary)
+        {
+            locaterDictionary.Clear();
+        }
+
+        #region Selinium Locators
+
+        public static void SetSendKeys(By attribute, string value)
         {
             driver.FindElement(attribute).SendKeys(value);
         }
@@ -45,5 +64,7 @@ namespace TestAutomationFramework.LocatersMethods
         {
             return driver.FindElement(attribute).Text;
         }
+
+        #endregion
     }
 }
