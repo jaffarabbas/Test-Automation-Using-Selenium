@@ -4,7 +4,7 @@
 		<Login>
 			<username>Admin</username>
 			<password>admin123</password>
-			<message>Welcome Paul</message>
+			<message>Welcome</message>
 			<locator>welcome</locator>
 		</Login>
 	</Execution>
