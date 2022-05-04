@@ -58,29 +58,31 @@ namespace TestAutomationFramework.TestCases
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            GlobalInstances.instancesDictionary.Add("browserConnection", ConfigurationManager.AppSettings.Get("ChromeBrowser"));
-            GlobalInstances.instancesDictionary.Add("url", ApplicationConstant.mainUrl);
+            GlobalInstances.SetInstancesDictionary("browserConnection", ConfigurationManager.AppSettings.Get("ChromeBrowser"));
+            GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.mainUrl);
             loginPageMethods = new LoginPageMethods();
         }
 
         [ClassCleanup]
         public static void ClassCleanup()
         {
-            GlobalInstances.instancesDictionary.Clear();
+            GlobalInstances.ClearInstancesDictionary();
         }
 
         [TestInitialize]
         public void TestInit()
         {
-            GlobalInstances.instancesDictionary.Add("username", TestContext.DataRow["username"].ToString());
-            GlobalInstances.instancesDictionary.Add("password", TestContext.DataRow["password"].ToString());
-            GlobalInstances.instancesDictionary.Add("message", TestContext.DataRow["message"].ToString());
+            GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
+            GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
+            GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
         }
 
         [TestCleanup]
         public void TestCleanup()
         {
-
+            GlobalInstances.GetInstancesDictionary().Remove("username");
+            GlobalInstances.GetInstancesDictionary().Remove("passowrd");
+            GlobalInstances.GetInstancesDictionary().Remove("message");
         }
 
         #endregion
@@ -95,28 +97,22 @@ namespace TestAutomationFramework.TestCases
         {
             #region Initialization
 
-            LoadDriverInitialiazer.LoadWebDriver(GlobalInstances.instancesDictionary["browserConnection"]);
+            LoadDriverInitialiazer.LoadWebDriver(GlobalInstances.GetInstancesDictionary()["browserConnection"]);
 
             #endregion
 
             #region Working
 
-            loginPageMethods.Login(GlobalInstances.instancesDictionary);
+            loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
 
             #endregion
 
             #region Checking Assertion
 
             string[] actualMessage = loginPageMethods.CheckPageIsNavigate().Split(' ');
-            Assert.AreEqual(actualMessage[0], GlobalInstances.instancesDictionary["message"], "Assert Fail");
+            Assert.AreEqual(actualMessage[0], GlobalInstances.GetInstancesDictionary()["message"], "Assert Fail");
 
             #endregion
-
-            #region Flushing
-
-            GlobalInstances.instancesDictionary.Clear();
-
-            #endregion 
         }
 
         #endregion
