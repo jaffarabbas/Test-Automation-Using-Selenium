@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.LocatersMethods
 {
@@ -26,17 +27,17 @@ namespace TestAutomationFramework.LocatersMethods
             {
                 string dictionaryData = tag.GetAttribute(attribute).ToString();
                 //validation to remove redendency in the dictionary datastructure
-                bool dictionaryValidation = dictionaryData != "" && dictionaryData != null && !locaterDictionary.ContainsKey(dictionaryData);
+                bool dictionaryValidation = Validation.DictionaryValidation(locaterDictionary, dictionaryData, dictionaryData);
                 if (attribute == "id")
                     SetLocaterByDictionary(dictionaryData,By.Id(dictionaryData),dictionaryValidation,locaterDictionary);
                 else if (attribute == "class")
-                    SetLocaterByDictionary(dictionaryData, By.ClassName(dictionaryData), dictionaryValidation, locaterDictionary);
+                    SetLocaterByDictionary(dictionaryData, By.ClassName(dictionaryData),dictionaryValidation,locaterDictionary);
             }
             return locaterDictionary;
         }
 
         //function to add locator in dictionary
-        public static void SetLocaterByDictionary(string key, By value, bool validation, Dictionary<string, By> locaterDictionary)
+        public static void SetLocaterByDictionary(string key, By value,bool validation,Dictionary<string, By> locaterDictionary)
         {
             if (validation)
                 locaterDictionary.Add(key, value);
