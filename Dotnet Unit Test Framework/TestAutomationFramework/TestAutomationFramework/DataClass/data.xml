@@ -5,7 +5,11 @@
 			<username>Admin</username>
 			<password>admin123</password>
 			<message>Welcome</message>
-			<locator>welcome</locator>
 		</Login>
+    <Login>
+      <username>Jaffar</username>
+      <password>admin123</password>
+      <message>Welcome</message>
+    </Login>
 	</Execution>
 </Automation>
