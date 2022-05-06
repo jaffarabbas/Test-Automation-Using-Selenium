@@ -1,2 +1,21 @@
-package TestProject;public class BaseClass {
+package TestProject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+    String url;
+    String webDriverExtension= "webdriver.chrome.driver";
+    String webDriverPath = "J:\\softwares\\chromedriver_win32\\chromedriver.exe";
+    WebDriver webDriver;
+
+    BaseClass(){
+        System.setProperty(webDriverExtension,webDriverPath);
+    }
+
+    public void Initialize(){
+        webDriver = new ChromeDriver();
+        webDriver.get(url);
+        webDriver.manage().window().maximize();
+    }
 }
