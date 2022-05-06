@@ -58,7 +58,6 @@ namespace TestAutomationFramework.TestCases
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            GlobalInstances.SetInstancesDictionary("browserConnection", ConfigurationManager.AppSettings.Get("ChromeBrowser"));
             GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.mainUrl);
             loginPageMethods = new LoginPageMethods();
         }
@@ -72,6 +71,7 @@ namespace TestAutomationFramework.TestCases
         [TestInitialize]
         public void TestInit()
         {
+            LoadDriverInitialiazer.LoadWebDriver();
             GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
             GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
             GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
@@ -97,7 +97,6 @@ namespace TestAutomationFramework.TestCases
         {
             #region Initialization
 
-            LoadDriverInitialiazer.LoadWebDriver(GlobalInstances.GetInstancesDictionary()["browserConnection"]);
 
             #endregion
 
