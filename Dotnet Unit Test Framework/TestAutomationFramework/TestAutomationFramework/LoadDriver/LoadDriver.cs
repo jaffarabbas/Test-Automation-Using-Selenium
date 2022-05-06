@@ -12,13 +12,20 @@ namespace LoadDriver
 {
     public class LoadDriverInitialiazer
     {
+        public static string ExicuteBrowser;
         public static IWebDriver driver;
         public static IJavaScriptExecutor jsDriver;
-        public static void LoadWebDriver(string driverType)
+
+        public LoadDriverInitialiazer()
+        {
+            ExicuteBrowser = ConfigurationManager.AppSettings.Get("ChromeBrowser");
+        }
+
+        public static void LoadWebDriver()
         {
             try
             {
-                if (driverType == "Chrome")
+                if (ExicuteBrowser == "Chrome")
                 {
                     var chromeOptions = new ChromeOptions();
                     chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get("MaximizeBrowserSize"));
