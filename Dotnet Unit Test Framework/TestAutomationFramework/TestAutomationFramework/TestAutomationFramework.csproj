@@ -79,7 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\Constant.cs" />
+    <Compile Include="Constants\CoreKeyWords.cs" />
     <Compile Include="GlobalInstances\GlobalInstances.cs" />
+    <Compile Include="LocatersMethods\DictionaryLocatorMethods.cs" />
     <Compile Include="LoadDriver\LoadDriver.cs" />
     <Compile Include="LocatersMethods\LocatorsMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
