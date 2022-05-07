@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestAutomationFramework.Constants;
 
 namespace LoadDriver
 {
@@ -18,14 +19,14 @@ namespace LoadDriver
 
         public LoadDriverInitialiazer()
         {
-            ExicuteBrowser = ConfigurationManager.AppSettings.Get("ChromeBrowser");
+            ExicuteBrowser = ConfigurationManager.AppSettings.Get("CurrentBrowser");
         }
 
         public static void LoadWebDriver()
         {
             try
             {
-                if (ExicuteBrowser == "Chrome")
+                if (ExicuteBrowser == Browsers.ChromeBrowser)
                 {
                     var chromeOptions = new ChromeOptions();
                     chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get("MaximizeBrowserSize"));
