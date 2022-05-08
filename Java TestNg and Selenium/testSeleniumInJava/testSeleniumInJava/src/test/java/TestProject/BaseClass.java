@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
-    String url;
-    String webDriverExtension= "webdriver.chrome.driver";
-    String webDriverPath = "J:\\softwares\\chromedriver_win32\\chromedriver.exe";
-    WebDriver webDriver;
+    public String url;
+    public String webDriverExtension= "webdriver.chrome.driver";
+    public String webDriverPath = "J:\\softwares\\chromedriver_win32\\chromedriver.exe";
+    public WebDriver webDriver;
 
     BaseClass(){
         System.setProperty(webDriverExtension,webDriverPath);
