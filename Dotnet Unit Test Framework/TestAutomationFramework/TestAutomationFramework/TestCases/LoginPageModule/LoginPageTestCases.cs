@@ -33,10 +33,11 @@ namespace TestAutomationFramework.TestCases
         #region Text Context Inititalization
 
         public TestContext instance;
-        public TestContext TestContext
+
+        private TestContext TestContext
         {
-            set { instance = value; }
-            get { return instance; }
+            set => instance = value;
+            get => instance;
         }
 
         #endregion
@@ -58,7 +59,7 @@ namespace TestAutomationFramework.TestCases
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.mainUrl);
+            LoadDriverInitialiazer.LoadWebDriver();
             loginPageMethods = new LoginPageMethods();
         }
 
@@ -71,7 +72,7 @@ namespace TestAutomationFramework.TestCases
         [TestInitialize]
         public void TestInit()
         {
-            LoadDriverInitialiazer.LoadWebDriver();
+            GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.MainUrl);
             GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
             GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
             GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
@@ -80,9 +81,7 @@ namespace TestAutomationFramework.TestCases
         [TestCleanup]
         public void TestCleanup()
         {
-            GlobalInstances.GetInstancesDictionary().Remove("username");
-            GlobalInstances.GetInstancesDictionary().Remove("passowrd");
-            GlobalInstances.GetInstancesDictionary().Remove("message");
+            GlobalInstances.ClearInstancesDictionary();
         }
 
         #endregion
@@ -91,7 +90,7 @@ namespace TestAutomationFramework.TestCases
 
         [TestMethod]
         [TestCategory("Login")]
-        [DataSource(ApplicationConstant.xmlConnectionString, ApplicationConstant.xmlPath, "Login", DataAccessMethod.Sequential)]
+        [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, "Login", DataAccessMethod.Sequential)]
         [Description("successfull login test with postive test data and get Welcome string from dashboard")]
         public void TestLoginWithPositiveData001()
         {
