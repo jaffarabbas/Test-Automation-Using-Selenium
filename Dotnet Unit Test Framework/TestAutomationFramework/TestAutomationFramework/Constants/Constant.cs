@@ -13,17 +13,17 @@ namespace TestAutomationFramework.Constants
         /// <summary>
         /// xml connection string for data driven
         /// </summary>
-        public const string xmlConnectionString = "Microsoft.VisualStudio.TestTools.DataSource.XML";
+        public const string XmlConnectionString = "Microsoft.VisualStudio.TestTools.DataSource.XML";
         /// <summary>
         /// xml path for data driven
         /// </summary>
-        public const string xmlPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\DataClass\data.xml";
+        public const string XmlPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\DataClass\data.xml";
 
         #endregion
 
         #region AUT (Application Under Test) Urls
 
-        public const string mainUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
+        public const string MainUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
 
         #endregion
     }
