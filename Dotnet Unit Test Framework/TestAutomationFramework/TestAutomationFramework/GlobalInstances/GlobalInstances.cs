@@ -8,7 +8,7 @@ using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.GlobalItems
 {
-    static class GlobalInstances
+    internal static class GlobalInstances
     {
         private static Dictionary<string, string> instancesDictionary = new Dictionary<string, string>(); 
 
