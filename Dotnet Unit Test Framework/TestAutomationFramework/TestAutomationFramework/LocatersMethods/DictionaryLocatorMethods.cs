@@ -9,7 +9,8 @@ using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.LocatersMethods
 {
-    public partial class LocatorsMethods
+    public partial class 
+        LocatorsMethods
     {
         #region Locator Dictionary
 
@@ -21,23 +22,31 @@ namespace TestAutomationFramework.LocatersMethods
         /// <returns>id:idpicker</returns>
         public static Dictionary<string, By> SetByLoacator(string tagName, string attribute)
         {
-            Dictionary<string, By> locaterDictionary = new Dictionary<string, By>();
-            var tagPicker = driver.FindElements(By.TagName(tagName));
-            foreach (WebElement tag in tagPicker)
+            try
             {
-                string dictionaryData = tag.GetAttribute(attribute).ToString();
-                //validation to remove redendency in the dictionary datastructure
-                bool dictionaryValidation = Validation.DictionaryValidation(locaterDictionary, dictionaryData, dictionaryData);
-                if (attribute == Locaters.ById)
-                    SetLocaterByDictionary(dictionaryData, By.Id(dictionaryData), dictionaryValidation, locaterDictionary);
-                else if (attribute == Locaters.ByClass)
-                    SetLocaterByDictionary(dictionaryData, By.ClassName(dictionaryData), dictionaryValidation, locaterDictionary);
+                var locaterDictionary = new Dictionary<string, By>();
+                var tagPicker = driver.FindElements(By.TagName(tagName));
+                foreach (var tag in tagPicker)
+                {
+                    var dictionaryData = tag.GetAttribute(attribute).ToString();
+                    //validation to remove redendency in the dictionary datastructure
+                    var dictionaryValidation = Validation.DictionaryValidation(locaterDictionary, dictionaryData, dictionaryData);
+                    if (attribute == Locaters.ById)
+                        SetLocaterByDictionary(dictionaryData, By.Id(dictionaryData), dictionaryValidation, locaterDictionary);
+                    else if (attribute == Locaters.ByClass)
+                        SetLocaterByDictionary(dictionaryData, By.ClassName(dictionaryData), dictionaryValidation, locaterDictionary);
+                }
+                return locaterDictionary;
             }
-            return locaterDictionary;
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         //function to add locator in dictionary
-        public static void SetLocaterByDictionary(string key, By value, bool validation, Dictionary<string, By> locaterDictionary)
+        private static void SetLocaterByDictionary(string key, By value, bool validation, Dictionary<string, By> locaterDictionary)
         {
             if (validation)
                 locaterDictionary.Add(key, value);
