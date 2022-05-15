@@ -19,11 +19,13 @@ namespace LoadDriver
 
         public LoadDriverInitialiazer()
         {
-            ExicuteBrowser = ConfigurationManager.AppSettings.Get("CurrentBrowser");
+            
         }
 
         public static void LoadWebDriver()
         {
+            ExicuteBrowser = ConfigurationManager.AppSettings.Get("CurrentBrowser");
+
             try
             {
                 if (ExicuteBrowser == Browsers.ChromeBrowser)
