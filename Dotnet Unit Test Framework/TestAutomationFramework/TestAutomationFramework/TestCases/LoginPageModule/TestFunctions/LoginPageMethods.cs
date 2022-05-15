@@ -15,38 +15,23 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
     {
         public void Login(Dictionary<string,string> attributes)
         {
-            try
-            {
-                driver.Url = attributes["url"];
-                var loginLocators = LocatorsMethods.SetByLoacator("input","id");
-                LocatorsMethods.SetSendKeys(loginLocators["txtUsername"],attributes["username"]);
-                LocatorsMethods.SetSendKeys(loginLocators["txtPassword"],attributes["password"]);
-                LocatorsMethods.SetClick(loginLocators["btnLogin"]);
-                LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("input", "id"));
-                LocatorsMethods.ClearDictionary(loginLocators);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
+            MessageBox.Show("sadf");
+            driver.Url = attributes["url"];
+            var loginLocators = LocatorsMethods.SetByLoacator("input","id");
+            LocatorsMethods.SetSendKeys(loginLocators["txtUsername"],attributes["username"]);
+            LocatorsMethods.SetSendKeys(loginLocators["txtPassword"],attributes["password"]);
+            LocatorsMethods.SetClick(loginLocators["btnLogin"]);
+            LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("input", "id"));
+            LocatorsMethods.ClearDictionary(loginLocators);
         }
 
         public string CheckPageIsNavigate()
         {
-            try
-            {
-                var dashboardLocators = LocatorsMethods.SetByLoacator("a", "id");
-                var messageValue = LocatorsMethods.GetText(dashboardLocators["welcome"]);
-                LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("a", "id"));
-                LocatorsMethods.ClearDictionary(dashboardLocators);
-                return messageValue;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
+            var dashboardLocators = LocatorsMethods.SetByLoacator("a", "id");
+            var messageValue = LocatorsMethods.GetText(dashboardLocators["welcome"]);
+            LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("a", "id"));
+            LocatorsMethods.ClearDictionary(dashboardLocators);
+            return messageValue;
         }
     }
 }
