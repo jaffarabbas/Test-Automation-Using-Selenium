@@ -6,10 +6,10 @@
 			<password>admin123</password>
 			<message>Welcome</message>
 		</Login>
-    <Login>
-      <username>Jaffar</username>
-      <password>admin123</password>
-      <message>Welcome</message>
-    </Login>
+		<Login>
+		  <username>Jaffar</username>
+		  <password>admin123</password>
+		  <message>Welcome</message>
+		</Login>
 	</Execution>
 </Automation>
