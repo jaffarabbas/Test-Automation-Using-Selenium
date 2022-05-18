@@ -11,7 +11,13 @@ namespace TestAutomationFramework.LocatersMethods
 {
     public partial class LocatorsMethods
     {
-        #region Locator Dictionary
+        #region Locater instances
+
+        private static Dictionary<string, By> byLocaterDictionary = new Dictionary<string, By>();
+
+        #endregion
+
+        #region Locator Dictionary from tag Automated
 
         /// <summary>
         /// It will return Dictionary with contains attribute of tags 
@@ -43,10 +49,40 @@ namespace TestAutomationFramework.LocatersMethods
                 locaterDictionary.Add(key, value);
         }
 
-        //clear the dictionary
+        /// <summary>
+        /// CLear Locator Dictionary from tag Automated
+        /// </summary>
+        /// <param name="locaterDictionary"></param>
         public static void ClearDictionary(Dictionary<string, By> locaterDictionary)
         {
             locaterDictionary.Clear();
+        }
+
+        #endregion
+
+        #region Locater Dictionary Manual
+
+        public static void SetLocater(string key, By locater)
+        {
+            var dictionaryValidation = !byLocaterDictionary.ContainsKey(key) && byLocaterDictionary != null;
+            if (dictionaryValidation)
+                byLocaterDictionary.Add(key, locater);
+            else
+                throw new Exception();
+        }
+
+        public static Dictionary<string, By> GetLocater()
+        {
+            return byLocaterDictionary;
+        }
+
+        /// <summary>
+        /// CLear Locater Dictionary Manual 
+        /// </summary>
+        /// <param name="locaterDictionary"></param>
+        public static void ClearDictionary()
+        {
+            byLocaterDictionary.Clear();
         }
 
         #endregion
