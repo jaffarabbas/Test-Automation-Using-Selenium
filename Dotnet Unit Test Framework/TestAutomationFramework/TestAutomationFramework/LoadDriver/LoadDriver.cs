@@ -35,6 +35,7 @@ namespace LoadDriver
                     IWebDriver chromeDriver = new ChromeDriver(chromeOptions);
                     jsDriver = chromeDriver as IJavaScriptExecutor;
                     driver = chromeDriver;
+                    driver.Url = ConfigurationManager.AppSettings.Get("MainUrl");
                 }
             }catch(Exception ex)
             {
