@@ -11,15 +11,16 @@ using System.Windows.Forms;
 using System.Data;
 using TestAutomationFramework.LocatersMethods;
 using TestAutomationFramework.GlobalItems;
+using TestAutomationFramework.TestCases.LoginPageModule;
 
-namespace TestAutomationFramework.TestCases
+namespace TestAutomationFramework.TestCases.LoginPageModule
 {
     /// <summary>
     /// Summary description for LoginPage
     /// </summary>
     [TestClass]
 
-    public class LoginPageTestCases
+    public partial class LoginPageTestCases
     {
         #region Instance Properties
 
@@ -34,7 +35,7 @@ namespace TestAutomationFramework.TestCases
 
         public TestContext instance;
 
-        private TestContext TestContext
+        public TestContext TestContext
         {
             set => instance = value;
             get => instance;
@@ -47,7 +48,7 @@ namespace TestAutomationFramework.TestCases
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
-            
+
         }
 
         [AssemblyCleanup]
@@ -61,18 +62,20 @@ namespace TestAutomationFramework.TestCases
         {
             LoadDriverInitialiazer.LoadWebDriver();
             loginPageMethods = new LoginPageMethods();
+            SetLoginLocaters();
         }
 
         [ClassCleanup]
         public static void ClassCleanup()
         {
             GlobalInstances.ClearInstancesDictionary();
+            //LocatorsMethods.ClearDictionary();
         }
 
         [TestInitialize]
         public void TestInit()
         {
-            GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.MainUrl);
+            GlobalInstances.SetInstancesDictionary("testData", TestContext.DataRow["testData"].ToString());
             GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
             GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
             GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
@@ -96,7 +99,6 @@ namespace TestAutomationFramework.TestCases
         {
             #region Initialization
 
-
             #endregion
 
             #region Working
@@ -107,8 +109,8 @@ namespace TestAutomationFramework.TestCases
 
             #region Checking Assertion
 
-            string[] actualMessage = loginPageMethods.CheckPageIsNavigate().Split(' ');
-            Assert.AreEqual(actualMessage[0], GlobalInstances.GetInstancesDictionary()["message"], "Assert Fail");
+            string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
+            Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], "Assert Fail");
 
             #endregion
         }
