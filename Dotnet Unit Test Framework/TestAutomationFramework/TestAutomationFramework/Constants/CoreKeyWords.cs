@@ -18,4 +18,10 @@ namespace TestAutomationFramework.Constants
         public static string ById = "id";
         public static string ByClass = "class";
     }
+
+    public class TestData
+    {
+        public static string PositiveTestData = "positive";
+        public static string NegativeTestData = "negative";
+    }
 }
