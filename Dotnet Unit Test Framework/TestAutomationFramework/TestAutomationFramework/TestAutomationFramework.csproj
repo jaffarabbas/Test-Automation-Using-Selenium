@@ -87,6 +87,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCases\AssignLeavePageModule\AssignTestCases.cs" />
     <Compile Include="TestCases\AssignLeavePageModule\TestFunctions\AssignLeaveMethods.cs" />
+    <Compile Include="TestCases\LoginPageModule\LoginTestLocaters.cs" />
     <Compile Include="TestCases\LoginPageModule\TestFunctions\LoginPageMethods.cs" />
     <Compile Include="TestCases\LoginPageModule\LoginPageTestCases.cs" />
     <Compile Include="Validations\Validations.cs" />
@@ -95,7 +96,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HelperMethods\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="DataClass\data.xml" />
   </ItemGroup>
