@@ -8,6 +8,7 @@ using LoadDriver;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using TestAutomationFramework.LocatersMethods;
+using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 {
@@ -15,23 +16,17 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
     {
         public void Login(Dictionary<string,string> attributes)
         {
-            MessageBox.Show("sadf");
-            driver.Url = attributes["url"];
-            var loginLocators = LocatorsMethods.SetByLoacator("input","id");
-            LocatorsMethods.SetSendKeys(loginLocators["txtUsername"],attributes["username"]);
-            LocatorsMethods.SetSendKeys(loginLocators["txtPassword"],attributes["password"]);
+            var loginLocators = LocatorsMethods.SetByLoacator("input", "id");
+            LocatorsMethods.SetSendKeys(loginLocators["txtUsername"], attributes["username"]);
+            LocatorsMethods.SetSendKeys(loginLocators["txtPassword"], attributes["password"]);
             LocatorsMethods.SetClick(loginLocators["btnLogin"]);
             LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("input", "id"));
             LocatorsMethods.ClearDictionary(loginLocators);
         }
 
-        public string CheckPageIsNavigate()
+        public string CheckAssertionMessage(Dictionary<string, string> attributes)
         {
-            var dashboardLocators = LocatorsMethods.SetByLoacator("a", "id");
-            var messageValue = LocatorsMethods.GetText(dashboardLocators["welcome"]);
-            LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("a", "id"));
-            LocatorsMethods.ClearDictionary(dashboardLocators);
-            return messageValue;
+            return (Validation.CheckTestData(attributes["testData"].ToString())) ? LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]) : LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
         }
     }
 }
