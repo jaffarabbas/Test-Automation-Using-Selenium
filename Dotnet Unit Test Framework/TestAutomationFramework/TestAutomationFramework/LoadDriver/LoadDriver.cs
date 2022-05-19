@@ -24,18 +24,18 @@ namespace LoadDriver
 
         public static void LoadWebDriver()
         {
-            ExicuteBrowser = ConfigurationManager.AppSettings.Get("CurrentBrowser");
+            ExicuteBrowser = ConfigurationManager.AppSettings.Get(Settings.CurrentBrowser);
 
             try
             {
                 if (ExicuteBrowser == Browsers.ChromeBrowser)
                 {
                     var chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get("MaximizeBrowserSize"));
+                    chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get(Settings.MaximizeBrowserSize));
                     IWebDriver chromeDriver = new ChromeDriver(chromeOptions);
                     jsDriver = chromeDriver as IJavaScriptExecutor;
                     driver = chromeDriver;
-                    driver.Url = ConfigurationManager.AppSettings.Get("MainUrl");
+                    driver.Url = ConfigurationManager.AppSettings.Get(Settings.MainUrl);
                 }
             }catch(Exception ex)
             {
