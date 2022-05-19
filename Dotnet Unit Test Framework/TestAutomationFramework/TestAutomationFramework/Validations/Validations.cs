@@ -11,7 +11,7 @@ namespace TestAutomationFramework.Validations
     {
         public static bool DictionaryValidation<T>(Dictionary<string, T> dictionary, string key, dynamic value)
         {
-            return !dictionary.ContainsKey(key) && value != null && value != "";
+            return !dictionary.ContainsKey(key);
         }
 
         public static bool CheckTestData(string data)
