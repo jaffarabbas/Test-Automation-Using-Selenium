@@ -30,6 +30,11 @@ namespace TestAutomationFramework.LocatersMethods
             return driver.FindElement(attribute).Text;
         }
 
+        public static void RefreshPage()
+        {
+            driver.Navigate().Refresh();
+        }
+
         #endregion
     }
 }
