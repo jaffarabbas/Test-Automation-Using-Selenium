@@ -17,11 +17,21 @@ namespace TestAutomationFramework.Constants
     {
         public static string ById = "id";
         public static string ByClass = "class";
+        public static string ByName = "name";   
+        public static string ByXPath = "xpath";
+        public static string ByUrl = "url"; 
+        public static string ByTitle = "title"; 
+        public static string ByDescription = "description";
     }
 
     public class TestData
     {
         public static string PositiveTestData = "positive";
         public static string NegativeTestData = "negative";
+    }
+
+    public class Errors
+    {
+        public static string AssertionFailed = "Assertion Failed";
     }
 }
