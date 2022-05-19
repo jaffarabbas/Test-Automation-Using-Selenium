@@ -69,7 +69,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         public static void ClassCleanup()
         {
             GlobalInstances.ClearInstancesDictionary();
-            //LocatorsMethods.ClearDictionary();
+            LocatorsMethods.ClearDictionary();
         }
 
         [TestInitialize]
@@ -92,13 +92,15 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         #region Test Cases
 
         [TestMethod]
-        [TestCategory("Login")]
-        [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, "Login", DataAccessMethod.Sequential)]
-        [Description("successfull login test with postive test data and get Welcome string from dashboard")]
+        [TestCategory(LoginTestMetaData.LoginCategory)]
+        [Priority(LoginTestMetaData.Priority)]
+        [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogin, ApplicationConstant.AccessMethod)]
+        [Description(LoginTestMetaData.Description)]
+        [Owner(LoginTestMetaData.Owner)]
         public void TestLoginWithPositiveData001()
         {
             #region Initialization
-
+            
             #endregion
 
             #region Working
@@ -110,7 +112,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             #region Checking Assertion
 
             string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
-            Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], "Assert Fail");
+            Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
             #endregion
         }
