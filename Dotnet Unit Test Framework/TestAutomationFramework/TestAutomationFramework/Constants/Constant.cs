@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,11 @@ namespace TestAutomationFramework.Constants
         /// xml path for data driven
         /// </summary>
         public const string XmlPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\DataClass\data.xml";
-
+        /// <summary>
+        /// xml tag name
+        /// </summary>
+        public const string TestCasesOfLogin = "Login";
+        public const DataAccessMethod AccessMethod = DataAccessMethod.Sequential;
         #endregion
 
         #region AUT (Application Under Test) Urls
