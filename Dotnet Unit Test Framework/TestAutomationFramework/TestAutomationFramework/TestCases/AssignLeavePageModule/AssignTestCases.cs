@@ -1,84 +1,88 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Configuration;
-using TestAutomationFramework.Constants;
-using TestAutomationFramework.GlobalItems;
-using TestAutomationFramework.TestCases.AssignLeavePageModule.TestFunctions;
+﻿//using LoadDriver;
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
+//using System;
+//using System.Configuration;
+//using TestAutomationFramework.Constants;
+//using TestAutomationFramework.GlobalItems;
+//using TestAutomationFramework.LocatersMethods;
+//using TestAutomationFramework.TestCases.AssignLeavePageModule.TestFunctions;
 
-namespace TestAutomationFramework.TestCases.AssignLeavePageModule
-{
-    [TestClass]
-    public class AssignLeaveTestCases
-    {
-        //#region Instance Properties
+//namespace TestAutomationFramework.TestCases.AssignLeavePageModule
+//{
+//    [TestClass]
+//    public class AssignLeaveTestCases
+//    {
+//        #region Instance Properties
 
-        ///// <summary>
-        ///// Object instances
-        ///// </summary>
-        //public static AssignLeaveMethods assignLeavePageMethods;
+//        /// <summary>
+//        /// Object instances
+//        /// </summary>
+//        public static AssignLeaveMethods assignLeavePageMethods;
 
-        //#endregion
+//        #endregion
 
-        //#region Text Context Inititalization
+//        #region Text Context Inititalization
 
-        //public TestContext instance;
-        //public TestContext TestContext
-        //{
-        //    set { instance = value; }
-        //    get { return instance; }
-        //}
+//        public TestContext instance;
+//        public TestContext TestContext
+//        {
+//            set { instance = value; }
+//            get { return instance; }
+//        }
 
-        //#endregion
+//        #endregion
 
-        //#region Initializations and Cleanups
+//        #region Initializations and Cleanups
 
-        //[AssemblyInitialize]
-        //public static void AssemblyInit(TestContext context)
-        //{
+//        [AssemblyInitialize]
+//        public static void AssemblyInit(TestContext context)
+//        {
 
-        //}
+//        }
 
-        //[AssemblyCleanup]
-        //public static void AssemblyCleanup()
-        //{
+//        [AssemblyCleanup]
+//        public static void AssemblyCleanup()
+//        {
 
-        //}
+//        }
 
-        //[ClassInitialize]
-        //public static void ClassInit(TestContext context)
-        //{
-        //    GlobalInstances.SetInstancesDictionary("browserConnection", ConfigurationManager.AppSettings.Get("ChromeBrowser"));
-        //    GlobalInstances.SetInstancesDictionary("url", ApplicationConstant.mainUrl);
-        //    //assignLeavePageMethods = new AssignLeaveMethods();
-        //}
+//        [ClassInitialize]
+//        public static void ClassInit(TestContext context)
+//        {
+//            LoadDriverInitialiazer.LoadWebDriver();
+//            assignLeavePageMethods = new AssignLeaveMethods();
+//        }
 
-        //[ClassCleanup]
-        //public static void ClassCleanup()
-        //{
+//        [ClassCleanup]
+//        public static void ClassCleanup()
+//        {
+//            GlobalInstances.ClearInstancesDictionary();
+//            LocatorsMethods.ClearDictionary();
+//        }
 
-        //}
+//        [TestInitialize]
+//        public void TestInit()
+//        {
 
-        //[TestInitialize]
-        //public void TestInit()
-        //{
+//        }
 
-        //}
+//        [TestCleanup]
+//        public void TestCleanup()
+//        {
+//            GlobalInstances.ClearInstancesDictionary();
+//        }
 
-        //[TestCleanup]
-        //public void TestCleanup()
-        //{
+//        #endregion
 
-        //}
-
-        //#endregion
-
-        [TestMethod]
-        [TestCategory("Assign Leave")]
-        //[DataSource(ApplicationConstant.xmlConnectionString, ApplicationConstant.xmlPath, "Login", DataAccessMethod.Sequential)]A
-        [Description("successfull Assign Leave test with postive test data")]
-        public void TestAssignLeaveForm002()
-        {
-            //AssignLeaveMethods.SubmitForm();
-        }
-    }
-}
+//        [TestMethod]
+//        [TestCategory(LoginTestMetaData.LoginCategory)]
+//        [Priority(LoginTestMetaData.Priority)]
+//        [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogin, ApplicationConstant.AccessMethod)]
+//        [Description(LoginTestMetaData.Description)]
+//        [Owner(LoginTestMetaData.Owner)]
+//        public void TestAssignLeaveForm002()
+//        {
+//            //AssignLeaveMethods.SubmitForm();
+//        }
+//    }
+//}
