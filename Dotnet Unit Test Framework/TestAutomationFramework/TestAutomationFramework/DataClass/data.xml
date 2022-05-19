@@ -2,16 +2,41 @@
 <Automation>
 	<Execution>
 		<Login>
+			<username></username>
+			<password>admin123</password>
+			<message>Username cannot be empty</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
+			<username>Jaffar</username>
+			<password></password>
+			<message>Password cannot be empty</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
+			<username>Jaffar</username>
+			<password>admin123</password>
+			<message>Invalid credentials</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
 			<username>Admin</username>
 			<password>admin123</password>
 			<message>Dashboard</message>
-      <testData>positive</testData>
+  		<testData>positive</testData>
 		</Login>
-		<Login>
-		  <username>Jaffar</username>
-		  <password>admin123</password>
-		  <message>Invalid credentials</message>
-      <testData>negative</testData>
-		</Login>
+    <AssignLeave>
+      <username>Admin</username>
+      <password>admin123</password>
+      <empName>Orange Test</empName>
+      <leaveType>CAN - Personal</leaveType>
+      <fromDate>2022-05-24</fromDate>
+      <toDate>2022-05-31</toDate>
+      <partialDays>End Day Only</partialDays>
+      <duration>Specify Time</duration>
+      <durationTimeFrom>09:15</durationTimeFrom>
+      <durationTimeTo>17:00</durationTimeTo>
+      <comment>Please Assign me a Leave</comment>
+    </AssignLeave>
 	</Execution>
 </Automation>
