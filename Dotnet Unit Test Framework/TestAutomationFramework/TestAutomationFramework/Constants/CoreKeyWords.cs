@@ -34,4 +34,11 @@ namespace TestAutomationFramework.Constants
     {
         public static string AssertionFailed = "Assertion Failed";
     }
+
+    public class Settings 
+    {
+        public static string MaximizeBrowserSize = "MaximizeBrowserSize";
+        public static string CurrentBrowser = "CurrentBrowser";
+        public static string MainUrl = "MainUrl";
+    }
 }
