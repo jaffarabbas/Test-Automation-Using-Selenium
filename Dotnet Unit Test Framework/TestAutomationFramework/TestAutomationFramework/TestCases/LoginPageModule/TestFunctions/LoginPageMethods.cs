@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LoadDriver;
@@ -16,6 +17,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
     {
         public void Login(Dictionary<string,string> attributes)
         {
+            LocatorsMethods.RefreshPage();
             var loginLocators = LocatorsMethods.SetByLoacator("input", "id");
             LocatorsMethods.SetSendKeys(loginLocators["txtUsername"], attributes["username"]);
             LocatorsMethods.SetSendKeys(loginLocators["txtPassword"], attributes["password"]);
@@ -26,7 +28,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 
         public string CheckAssertionMessage(Dictionary<string, string> attributes)
         {
-            return (Validation.CheckTestData(attributes["testData"].ToString())) ? LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]) : LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
+            return (Validation.CheckTestData(attributes["testData"])) ? LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]) : LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
         }
     }
 }
