@@ -50,3 +50,5 @@ J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomati
 J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\obj\Debug\TestAutomationFramework.csproj.CopyComplete
 J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\obj\Debug\TestAutomationFramework.dll
 J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\obj\Debug\TestAutomationFramework.pdb
+J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\bin\Debug\log4net.dll
+J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\bin\Debug\log4net.xml
