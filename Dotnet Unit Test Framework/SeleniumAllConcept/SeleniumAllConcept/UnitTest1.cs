@@ -262,6 +262,7 @@ namespace SeleniumAllConcept
                 elementState = "disabled";
             }
 
+
             // Scroll Top or Bottom
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("window.scrollTo(0, document." + "headOrBody" + ".scrollHeight);");
