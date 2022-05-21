@@ -14,7 +14,7 @@ namespace TestAutomationFramework.GlobalItems
 
         public static void SetInstancesDictionary(string key,string value)
         {
-            if (Validation.DictionaryValidation(instancesDictionary, key, value))
+            if (!instancesDictionary.ContainsKey(key))
             {
                 instancesDictionary.Add(key, value);
             }
