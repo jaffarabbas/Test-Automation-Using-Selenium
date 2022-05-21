@@ -89,9 +89,8 @@
     <Compile Include="LocatersMethods\DictionaryLocatorMethods.cs" />
     <Compile Include="LoadDriver\LoadDriver.cs" />
     <Compile Include="LocatersMethods\LocatorsMethods.cs" />
+    <Compile Include="LogHandler\LogHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCases\AssignLeavePageModule\AssignTestCases.cs" />
-    <Compile Include="TestCases\AssignLeavePageModule\TestFunctions\AssignLeaveMethods.cs" />
     <Compile Include="TestCases\LoginPageModule\LoginTestLocaters.cs" />
     <Compile Include="TestCases\LoginPageModule\TestFunctions\LoginPageMethods.cs" />
     <Compile Include="TestCases\LoginPageModule\LoginPageTestCases.cs" />
@@ -99,11 +98,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Files\ErrorLog.log" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="HelperMethods\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DataClass\data.xml" />
   </ItemGroup>
