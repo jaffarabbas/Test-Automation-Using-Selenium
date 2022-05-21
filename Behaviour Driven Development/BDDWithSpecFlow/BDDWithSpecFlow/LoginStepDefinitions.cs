@@ -1,6 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System;
 using TechTalk.SpecFlow;
 
@@ -9,37 +6,28 @@ namespace BDDWithSpecFlow
     [Binding]
     public class LoginStepDefinitions
     {
-        IWebDriver driver;
-        public LoginStepDefinitions()
+        [Given(@"enter Username:")]
+        public void GivenEnterUsername(Table table)
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Url = "https://adactinhotelapp.com/";
+            throw new PendingStepException();
         }
 
-        [Given(@"Enter Username ""([^""]*)""")]
-        public void GivenEnterUsername(string jaffarabbas)
+        [Given(@"Enter Password:")]
+        public void GivenEnterPassword(Table table)
         {
-            driver.FindElement(By.Id("username")).SendKeys(jaffarabbas);
+            throw new PendingStepException();
         }
 
-        [Given(@"Enter Passowrd ""([^""]*)""")]
-        public void GivenEnterPassowrd(string jaffarabbas)
-        {
-            driver.FindElement(By.Name("password")).SendKeys(jaffarabbas);
-        }
-
-        [When(@"When username and password entered Click login button")]
+        [When(@"when username and password entered Click login button")]
         public void WhenWhenUsernameAndPasswordEnteredClickLoginButton()
         {
-            driver.FindElement(By.ClassName("login_button")).Click();
+            throw new PendingStepException();
         }
 
-        [Then(@"check welcome message and assert it")]
+        [Then(@"Check welcome message and assert it")]
         public void ThenCheckWelcomeMessageAndAssertIt()
         {
-            string value = driver.FindElement(By.ClassName("welcome_menu")).Text;
-            Assert.AreEqual("Welcome to Adactin Group of Hotels", value, "Assertion Faild");
+            throw new PendingStepException();
         }
     }
 }
