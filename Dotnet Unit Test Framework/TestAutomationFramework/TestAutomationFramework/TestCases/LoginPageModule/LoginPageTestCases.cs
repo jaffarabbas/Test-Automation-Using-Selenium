@@ -12,6 +12,7 @@ using System.Data;
 using TestAutomationFramework.LocatersMethods;
 using TestAutomationFramework.GlobalItems;
 using TestAutomationFramework.TestCases.LoginPageModule;
+using TestAutomationFramework.LoggerHandler;
 
 namespace TestAutomationFramework.TestCases.LoginPageModule
 {
@@ -62,6 +63,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         {
             LoadDriverInitialiazer.LoadWebDriver();
             loginPageMethods = new LoginPageMethods();
+            //Initialized Class Locaters
             SetLoginLocaters();
         }
 
@@ -99,23 +101,31 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [Owner(LoginTestMetaData.Owner)]
         public void TestLoginWithPositiveData001()
         {
-            #region Initialization
-            
-            #endregion
+            try
+            {
+                #region Initialization
 
-            #region Working
+                #endregion
 
-            loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
+                #region Working
 
-            #endregion
+                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
 
-            #region Checking Assertion
+                #endregion
 
-            string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
-            Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
+                #region Checking Assertion
 
-            #endregion
-        }
+                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
+                Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
+
+                #endregion
+
+            }
+            catch(Exception error)
+            {
+                 LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+            }
+}
 
         #endregion
     }
