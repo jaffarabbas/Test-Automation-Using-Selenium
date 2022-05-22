@@ -13,6 +13,11 @@ namespace TestAutomationFramework.Constants
         public static string EdgeBrowser = "Chrome";
     }
 
+    public class BrowserOptions
+    {
+        public static string ChromeOptions = "Chrome";
+    }
+
     public class Locaters
     {
         public static string ById = "id";
@@ -37,7 +42,6 @@ namespace TestAutomationFramework.Constants
 
     public class Settings 
     {
-        public static string MaximizeBrowserSize = "MaximizeBrowserSize";
         public static string CurrentBrowser = "CurrentBrowser";
         public static string MainUrl = "MainUrl";
     }
