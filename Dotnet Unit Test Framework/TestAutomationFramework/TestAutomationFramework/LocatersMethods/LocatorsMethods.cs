@@ -17,22 +17,22 @@ namespace TestAutomationFramework.LocatersMethods
 
         public static void SetSendKeys(By attribute, string value)
         {
-            driver.FindElement(attribute).SendKeys(value);
+            GetDriver().FindElement(attribute).SendKeys(value);
         }
 
         public static void SetClick(By attribute)
         {
-            driver.FindElement(attribute).Click();
+            GetDriver().FindElement(attribute).Click();
         }
 
         public static string GetText(By attribute)
         {
-            return driver.FindElement(attribute).Text;
+            return GetDriver().FindElement(attribute).Text;
         }
 
         public static void RefreshPage()
         {
-            driver.Navigate().Refresh();
+            GetDriver().Navigate().Refresh();
         }
 
         #endregion
