@@ -82,10 +82,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigrationMethods\ConfigureArrayScrapper.cs" />
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\CoreKeyWords.cs" />
     <Compile Include="Constants\TestMetaData.cs" />
     <Compile Include="GlobalInstances\GlobalInstances.cs" />
+    <Compile Include="LoadDriver\BrowserDriver.cs" />
+    <Compile Include="LoadDriver\BrowserOptions.cs" />
     <Compile Include="LocatersMethods\DictionaryLocatorMethods.cs" />
     <Compile Include="LoadDriver\LoadDriver.cs" />
     <Compile Include="LocatersMethods\LocatorsMethods.cs" />
