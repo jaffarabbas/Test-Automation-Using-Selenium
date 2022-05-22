@@ -10,7 +10,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 {
     public partial class LoginPageTestCases
     {
-        public static void SetLoginLocaters()
+        private static void SetLoginLocaters()
         {
             LocatorsMethods.SetLocater("dashboardByXpath", By.XPath("//*[@id='content']/div/div[1]/h1"));
             LocatorsMethods.SetLocater("invalidById",By.Id("spanMessage"));
