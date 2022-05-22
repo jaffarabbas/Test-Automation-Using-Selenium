@@ -28,7 +28,7 @@ namespace TestAutomationFramework.LocatersMethods
         public static Dictionary<string, By> SetByLoacator(string tagName, string attribute)
         {
             var locaterDictionary = new Dictionary<string, By>();
-            var tagPicker = driver.FindElements(By.TagName(tagName));
+            var tagPicker = GetDriver().FindElements(By.TagName(tagName));
             foreach (var tag in tagPicker)
             {
                 var dictionaryData = tag.GetAttribute(attribute).ToString();
