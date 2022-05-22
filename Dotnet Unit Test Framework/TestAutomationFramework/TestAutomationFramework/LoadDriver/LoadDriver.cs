@@ -8,38 +8,68 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestAutomationFramework.Constants;
+using TestAutomationFramework.LoggerHandler;
 
 namespace LoadDriver
 {
-    public class LoadDriverInitialiazer
+    public partial class LoadDriverInitialiazer
     {
-        public static string ExicuteBrowser;
-        public static IWebDriver driver;
-        public static IJavaScriptExecutor jsDriver;
+        private static string ExicuteBrowser;
+        private static IWebDriver driver;
+        private static IJavaScriptExecutor jsDriver;
 
-        public LoadDriverInitialiazer()
+        /// <summary>
+        /// getter function for driver
+        /// </summary>
+        /// <returns></returns>
+        protected static IWebDriver GetDriver()
         {
-            
+            return driver;
         }
 
+        /// <summary>
+        /// getter function for js driver
+        /// </summary>
+        /// <returns></returns>
+        protected static IJavaScriptExecutor GetJsDriver()
+        {
+            return jsDriver;
+        }
+
+        /// <summary>
+        /// set driver url 
+        /// </summary>
+        /// <param name="url"></param>
+        private static void SetDriverUrl(string url)
+        {
+            driver.Url = url;
+        }
+
+        /// <summary>
+        /// Load driver dynamically only by a keyword e.g Chrome it will intialize chrome driver
+        /// with it options dynamiclly 
+        /// </summary>
         public static void LoadWebDriver()
         {
+            //Set keyword for browser initialization
             ExicuteBrowser = ConfigurationManager.AppSettings.Get(Settings.CurrentBrowser);
-
             try
             {
-                if (ExicuteBrowser == Browsers.ChromeBrowser)
+                //set browser 
+                SetBrowserDriver(SetBrowserOptions(ExicuteBrowser));
+                foreach (var browser in BrowserDriver)
                 {
-                    var chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArguments(ConfigurationManager.AppSettings.Get(Settings.MaximizeBrowserSize));
-                    IWebDriver chromeDriver = new ChromeDriver(chromeOptions);
-                    jsDriver = chromeDriver as IJavaScriptExecutor;
-                    driver = chromeDriver;
-                    driver.Url = ConfigurationManager.AppSettings.Get(Settings.MainUrl);
+                    if (browser.Key == ExicuteBrowser)
+                    {
+                        IWebDriver selectedBrowser = browser.Value;
+                        jsDriver = selectedBrowser as IJavaScriptExecutor;
+                        driver = selectedBrowser;
+                        SetDriverUrl(ConfigurationManager.AppSettings.Get(Settings.MainUrl));
+                    }
                 }
-            }catch(Exception ex)
+            }catch(Exception error)
             {
-                throw new Exception(ex.Message);
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
             }
         }
     }
