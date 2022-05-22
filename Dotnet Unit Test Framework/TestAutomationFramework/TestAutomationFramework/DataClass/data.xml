@@ -4,7 +4,7 @@
 		<Login>
 			<username></username>
 			<password>admin123</password>
-			<message>Username cannot be empty</message>
+			<message>Username cannot be empt</message>
 			<testData>negative</testData>
 		</Login>
 		<Login>
