@@ -59,6 +59,7 @@ namespace LoadDriver
                 SetBrowserDriver(SetBrowserOptions(ExicuteBrowser));
                 foreach (var browser in BrowserDriver)
                 {
+                    MessageBox.Show(browser.Key.ToString());
                     if (browser.Key == ExicuteBrowser)
                     {
                         IWebDriver selectedBrowser = browser.Value;
