@@ -1,10 +1,12 @@
 ﻿using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using TestAutomationFramework.ConfigrationMethods;
 using TestAutomationFramework.Constants;
 
@@ -23,6 +25,7 @@ namespace LoadDriver
         private static void SetBrowserDictionary()
         {
             browserOptionObjects.Add(BrowserOptions.ChromeOptions, new ChromeOptions());
+            browserOptionObjects.Add(BrowserOptions.FireFoxOptions, new FirefoxOptions());
         }
         /// <summary>
         /// A generaize function for setting browser arguments
@@ -46,7 +49,6 @@ namespace LoadDriver
                     }
                     return browserValue.Value;
                 }
-                break;
             }
             return null;
         }
