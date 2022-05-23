@@ -11,7 +11,7 @@ namespace TestAutomationFramework.ConfigrationMethods
     {
         public static string[] GetConfigrationArray(string configrationArray)
         {
-            return ConfigurationManager.AppSettings[configrationArray].Split(',');
+            return configrationArray != null ? ConfigurationManager.AppSettings[configrationArray].Split(',') : new string[]  { "" };
         }
     }
 }
