@@ -9,13 +9,14 @@ namespace TestAutomationFramework.Constants
     public class Browsers
     {
         public static string ChromeBrowser = "Chrome";
-        public static string FireFoxBrowser = "Chrome";
-        public static string EdgeBrowser = "Chrome";
+        public static string FireFoxBrowser = "FireFox";
+        public static string EdgeBrowser = "MicrosoftEdge";
     }
 
     public class BrowserOptions
     {
         public static string ChromeOptions = "Chrome";
+        public static string FireFoxOptions = "FireFox";
     }
 
     public class Locaters
