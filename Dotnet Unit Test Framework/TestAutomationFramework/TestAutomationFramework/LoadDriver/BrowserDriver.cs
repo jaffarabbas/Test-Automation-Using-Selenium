@@ -1,9 +1,11 @@
 ﻿using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using TestAutomationFramework.Constants;
 
 namespace LoadDriver
@@ -22,6 +24,7 @@ namespace LoadDriver
         private static void SetBrowserDriver(dynamic browserOptions)
         {
             BrowserDriver.Add(Browsers.ChromeBrowser, new ChromeDriver(browserOptions));
+            BrowserDriver.Add(Browsers.FireFoxBrowser, new FirefoxDriver(browserOptions));
         }
     }
 }
