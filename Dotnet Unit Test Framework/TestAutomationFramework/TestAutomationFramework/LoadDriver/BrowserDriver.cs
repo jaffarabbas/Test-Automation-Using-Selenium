@@ -16,15 +16,14 @@ namespace LoadDriver
         /// Dictionary that store browser driver 
         /// </summary>
         private static Dictionary<string, dynamic> BrowserDriver = new Dictionary<string, dynamic>();
-
         /// <summary>
         /// Set browsers to the dictionary
         /// </summary>
         /// <param name="browserOptions"></param>
         private static void SetBrowserDriver(dynamic browserOptions)
         {
-            BrowserDriver.Add(Browsers.ChromeBrowser, new ChromeDriver(browserOptions));
-            BrowserDriver.Add(Browsers.FireFoxBrowser, new FirefoxDriver(browserOptions));
+            BrowserDriver.Add(Browsers.ChromeBrowser, new ChromeDriver());
+            BrowserDriver.Add(Browsers.FireFoxBrowser, new FirefoxDriver());
         }
     }
 }
