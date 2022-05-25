@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -56,18 +57,27 @@ namespace LoadDriver
             try
             {
                 //set browser 
-                SetBrowserDriver(SetBrowserOptions(ExicuteBrowser));
-                foreach (var browser in BrowserDriver)
+                //SetBrowserDriver(SetBrowserOptions(ExicuteBrowser));
+                if(ExicuteBrowser == Browsers.ChromeBrowser)
                 {
-                    MessageBox.Show(browser.Key.ToString());
-                    if (browser.Key == ExicuteBrowser)
-                    {
-                        IWebDriver selectedBrowser = browser.Value;
-                        jsDriver = selectedBrowser as IJavaScriptExecutor;
-                        driver = selectedBrowser;
-                        SetDriverUrl(ConfigurationManager.AppSettings.Get(Settings.MainUrl));
-                    }
+                    driver = new ChromeDriver(SetBrowserOptions(ExicuteBrowser));
                 }
+                else if(ExicuteBrowser == Browsers.FireFoxBrowser)
+                {
+                    driver = new FirefoxDriver(SetBrowserOptions(ExicuteBrowser));
+                }
+                SetDriverUrl(ConfigurationManager.AppSettings.Get(Settings.MainUrl));
+                //foreach (var browser in BrowserDriver)
+                //{
+                //    MessageBox.Show(browser.Key.ToString());
+                //    if (browser.Key == ExicuteBrowser)
+                //    {
+                //        MessageBox.Show(browser.Value);
+                //        driver = browser[ExicuteBrowser];
+                //        SetDriverUrl(ConfigurationManager.AppSettings.Get(Settings.MainUrl));
+                //        break;
+                //    }
+            //}
             }catch(Exception error)
             {
                 LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
