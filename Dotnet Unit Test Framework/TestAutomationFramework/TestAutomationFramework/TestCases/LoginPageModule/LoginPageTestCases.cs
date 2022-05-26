@@ -94,12 +94,12 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         #region Test Cases
 
         [TestMethod]
-        [TestCategory(LoginTestMetaData.LoginCategory)]
-        [Priority(LoginTestMetaData.Priority)]
+        [TestCategory(LoginTestMetaData.TestCase001.LoginCategory)]
+        [Priority(LoginTestMetaData.TestCase001.Priority)]
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogin, ApplicationConstant.AccessMethod)]
-        [Description(LoginTestMetaData.Description)]
-        [Owner(LoginTestMetaData.Owner)]
-        public void TestLoginWithPositiveData001()
+        [Description(LoginTestMetaData.TestCase001.Description)]
+        [Owner(LoginTestMetaData.TestCase001.Owner)]
+        public void TestLoginFunctionality001()
         {
             try
             {
@@ -119,13 +119,47 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
-
             }
-            catch(Exception error)
+            catch (Exception error)
             {
-                 LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
             }
-}
+        }
+
+
+        [TestMethod]
+        [TestCategory(LoginTestMetaData.TestCase002.LoginCategory)]
+        [Priority(LoginTestMetaData.TestCase002.Priority)]
+        [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogout, ApplicationConstant.AccessMethod)]
+        [Description(LoginTestMetaData.TestCase002.Description)]
+        [Owner(LoginTestMetaData.TestCase002.Owner)]
+        public void TestLogoutFunctionality002()
+        {
+            try
+            {
+                #region Initialization
+
+                #endregion
+
+                #region Working
+
+                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
+                loginPageMethods.LogOut();
+
+                #endregion
+
+                #region Checking Assertion
+
+                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
+                Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
+
+                #endregion
+            }
+            catch (Exception error)
+            {
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+            }
+        }
 
         #endregion
     }
