@@ -20,10 +20,17 @@ namespace TestAutomationFramework.Constants
         /// </summary>
         public const string XmlPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\DataClass\data.xml";
         /// <summary>
-        /// xml tag name
+        /// traversing method
         /// </summary>
-        public const string TestCasesOfLogin = "Login";
         public const DataAccessMethod AccessMethod = DataAccessMethod.Sequential;
+        
+        #endregion
+
+        #region Xml Tags
+
+        public const string TestCasesOfLogin = "Login";
+        public const string TestCasesOfLogout = "Logout";
+
         #endregion
 
         #region AUT (Application Under Test) Urls
