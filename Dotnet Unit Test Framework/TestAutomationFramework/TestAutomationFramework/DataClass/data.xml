@@ -25,6 +25,12 @@
 			<message>Dashboard</message>
   		<testData>positive</testData>
 		</Login>
+    <Logout>
+      <username>Admin</username>
+      <password>admin123</password>
+      <message>LOGIN Panel</message>
+      <testData>positive</testData>
+    </Logout>
     <AssignLeave>
       <username>Admin</username>
       <password>admin123</password>
