@@ -34,9 +34,24 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
             }
         }
 
+        public void LogOut()
+        {
+            LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["welcomeDropdownById"]);
+            Thread.Sleep(2000);
+            LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["logoutBtnXpath"]);
+        }
+
         public string CheckAssertionMessage(Dictionary<string, string> attributes)
         {
-             return (Validation.CheckTestData(attributes["testData"])) ? LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]) : LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
+            if (Validation.CheckTestData(attributes["testData"]))
+            {
+                
+                return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]);
+            }
+            else
+            {
+                return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
+            }
         }
     }
 }
