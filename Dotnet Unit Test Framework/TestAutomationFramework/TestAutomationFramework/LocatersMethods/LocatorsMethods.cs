@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestAutomationFramework.LoggerHandler;
 using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.LocatersMethods
@@ -17,22 +18,51 @@ namespace TestAutomationFramework.LocatersMethods
 
         public static void SetSendKeys(By attribute, string value)
         {
-            GetDriver().FindElement(attribute).SendKeys(value);
+            try
+            {
+                GetDriver().FindElement(attribute).SendKeys(value);
+            }
+            catch(Exception error)
+            {
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+            }
         }
 
         public static void SetClick(By attribute)
         {
-            GetDriver().FindElement(attribute).Click();
+            try
+            {
+                GetDriver().FindElement(attribute).Click();
+            }
+            catch (Exception error)
+            {
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+            }
         }
 
         public static string GetText(By attribute)
         {
-            return GetDriver().FindElement(attribute).Text;
+            try
+            {
+                return GetDriver().FindElement(attribute).Text;
+            }
+            catch (Exception error)
+            {
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                return null;
+            }
         }
 
         public static void RefreshPage()
         {
-            GetDriver().Navigate().Refresh();
+            try
+            {
+                GetDriver().Navigate().Refresh();
+            }
+            catch (Exception error)
+            {
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+            }
         }
 
         #endregion
