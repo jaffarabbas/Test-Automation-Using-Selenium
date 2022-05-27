@@ -11,6 +11,7 @@ using OpenQA.Selenium;
 using TestAutomationFramework.LocatersMethods;
 using TestAutomationFramework.LoggerHandler;
 using TestAutomationFramework.Validations;
+using TestAutomationFramework.Constants;
 
 namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 {
@@ -41,17 +42,35 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
             LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["logoutBtnXpath"]);
         }
 
-        public string CheckAssertionMessage(Dictionary<string, string> attributes)
+        public string CheckAssertionMessage(Dictionary<string, string> attributes,string testcase)
         {
-            if (Validation.CheckTestData(attributes["testData"]))
+            #region Login assertion
+
+            if (testcase == LoginTestMetaData.TestCase001.LoginCategory)
             {
-                
-                return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]);
+                if (Validation.CheckTestData(attributes["testData"]))
+                {
+                    return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]);
+                }
+                else
+                {
+                    return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
+                }
             }
-            else
+
+
+            #endregion
+
+            #region Logout asserion
+
+            if (testcase == LoginTestMetaData.TestCase002.LoginCategory)
             {
-                return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["invalidById"]);
+                return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["loginPanelTextById"]);
             }
+
+            #endregion
+
+            return null;
         }
     }
 }
