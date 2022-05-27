@@ -53,4 +53,16 @@ namespace TestAutomationFramework.Constants
         public static string Failed = "Test Failed";
         public static string Error = "Error Found";
     }
+
+    public class ExtentActions
+    {
+        public static string EnterInTextFeild(string message)
+        {
+            return "Entered " + message == null ? " Empty String " : message + " In Input";
+        }
+        public static string CLickedButton(string message)
+        {
+            return "Cliked " + message == null ? " Empty String " : message + " Button";
+        }
+    }
 }
