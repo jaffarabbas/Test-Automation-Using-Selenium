@@ -63,6 +63,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
+            InitializeReport.InitializeReportObject.ExtentInitialize();
             LoadDriverInitialiazer.LoadWebDriver();
             loginPageMethods = new LoginPageMethods();
             //Initialized Class Locaters
@@ -72,6 +73,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [ClassCleanup]
         public static void ClassCleanup()
         {
+            InitializeReport.InitializeReportObject.ExtentFlush();
             GlobalInstances.ClearInstancesDictionary();
             LocatorsMethods.ClearDictionary();
         }
@@ -107,13 +109,8 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             {
                 #region Initialization
 
-                //InitializeReport.InitializeReportObject().ExtentInitialize();
-                //InitializeReport.InitializeReportObject().GetExtentReports().CreateTest("test 1").Info("Test Strted");
+                InitializeReport.InitializeReportObject.CreateTest(TestContext.TestName, LoginTestMetaData.TestCase001.Description);
 
-                InitializeReport obj = new InitializeReport();
-                obj.ExtentInitialize();
-
-                obj.GetExtentReports().CreateTest("test 1").Info("Test Started");
                 #endregion
 
                 #region Working
@@ -131,14 +128,13 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Reporting 
 
-                //InitializeReport.InitializeReportObject().GetExtentTest().Log(Status.Pass, ExtentLogger.Passed);
-                //InitializeReport.InitializeReportObject().ExtentFlush();
-                obj.GetExtentTest().Log(Status.Pass, ExtentLogger.Passed);
+                InitializeReport.InitializeReportObject.CreateLog(Status.Pass, ExtentLogger.Passed);
+
                 #endregion
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
@@ -155,13 +151,14 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             {
                 #region Initialization
 
-                //InitializeReport.InitializeReportObject();
+                InitializeReport.InitializeReportObject.CreateTest(TestContext.TestName, LoginTestMetaData.TestCase002.Description);
 
                 #endregion
 
                 #region Working
 
-                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
+                //loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
+
                 loginPageMethods.LogOut();
 
                 #endregion
@@ -172,10 +169,16 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
+
+                #region Reporting 
+
+                InitializeReport.InitializeReportObject.CreateLog(Status.Pass, ExtentLogger.Passed);
+
+                #endregion
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
