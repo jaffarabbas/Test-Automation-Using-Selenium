@@ -41,7 +41,7 @@ namespace TestAutomationFramework.Constants
 
         #region Extent Report Contants
 
-        public const string ReportPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\Files\Reports\TestReport.html";
+        public const string ReportPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\Files\Reports\";
 
         public const string ReportFilename = "TestReport.html";
 
