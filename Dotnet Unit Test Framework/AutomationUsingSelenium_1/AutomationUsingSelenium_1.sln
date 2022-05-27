@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogingInSeleniumApp", "Logi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleBrowserExicution", "MultipleBrowserExicution\MultipleBrowserExicution.csproj", "{2049ABF3-F2C6-47E7-8CEF-376A3FA71B36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtentReportingInSelenium", "ExtentReportingInSelenium\ExtentReportingInSelenium.csproj", "{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{2049ABF3-F2C6-47E7-8CEF-376A3FA71B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2049ABF3-F2C6-47E7-8CEF-376A3FA71B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2049ABF3-F2C6-47E7-8CEF-376A3FA71B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
