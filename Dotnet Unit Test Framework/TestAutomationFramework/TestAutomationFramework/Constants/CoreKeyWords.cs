@@ -46,4 +46,11 @@ namespace TestAutomationFramework.Constants
         public static string CurrentBrowser = "CurrentBrowser";
         public static string MainUrl = "MainUrl";
     }
+
+    public class ExtentLogger
+    {
+        public static string Passed = "Test Passed";
+        public static string Failed = "Test Failed";
+        public static string Error = "Error Found";
+    }
 }
