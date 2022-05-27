@@ -47,6 +47,14 @@ namespace LoadDriver
         }
 
         /// <summary>
+        /// Close driver
+        /// </summary>
+        public static void CloseDriver()
+        {
+            driver.Close();
+        }
+
+        /// <summary>
         /// Load driver dynamically only by a keyword e.g Chrome it will intialize chrome driver
         /// with it options dynamiclly 
         /// </summary>
