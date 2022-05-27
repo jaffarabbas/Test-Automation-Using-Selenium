@@ -15,21 +15,20 @@ namespace TestAutomationFramework.Reporting
     {
         #region ExtentReport Methods
 
-        private ExtentReports extentReports;
-        private ExtentTest extentTest;
+        private ExtentReports extentReports = null;
+        private ExtentTest extentTest = null;
 
         public void ExtentInitialize()
         {
             try
             {
-                MessageBox.Show("asd");
-                var report = new ExtentHtmlReporter(@"Report.html");
+                var report = new ExtentHtmlReporter(ApplicationConstant.ReportPath + ApplicationConstant.ReportFilename);
                 extentReports = new ExtentReports();
                 extentReports.AttachReporter(report);
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
@@ -41,11 +40,10 @@ namespace TestAutomationFramework.Reporting
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
                 return null;
             }
         }
-
 
         public ExtentTest GetExtentTest()
         {
@@ -55,7 +53,7 @@ namespace TestAutomationFramework.Reporting
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
                 return null;
             }
         }
@@ -65,18 +63,43 @@ namespace TestAutomationFramework.Reporting
             extentReports.Flush();
         }
 
-       
+        public void CreateTest(string testname,string info)
+        {
+            extentTest = extentReports.CreateTest(testname).Info(info);
+        }
+
+        public void CreateLog(Status status,string message)
+        {
+            extentTest.Log(status,message);
+        }
+
+        public void CreateInfo(string message)
+        {
+            extentTest.Info(message);
+        }
+
         #endregion
 
         #region ExtentReports Singleton Object
 
-        //private static InitializeReport initializeReport;
+        private static InitializeReport initializeReport;
 
-        //public static InitializeReport InitializeReportObject()
-        //{
-        //    initializeReport = new InitializeReport();
-        //    return initializeReport;
-        //}
+        public static InitializeReport InitializeReportObject
+        {
+            get
+            {
+                if(initializeReport == null)
+                {
+
+                    initializeReport = new InitializeReport();
+                }
+                return initializeReport;
+            }
+            set
+            {
+                initializeReport = value;
+            }
+        }
 
         #endregion
     }
