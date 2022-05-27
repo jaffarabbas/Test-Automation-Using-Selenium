@@ -36,7 +36,7 @@ namespace TestAutomationFramework.Constants
             /// <summary>
             /// category of the test case
             /// </summary>
-            public const string LoginCategory = "Login";
+            public const string LoginCategory = "Logout";
             /// <summary>
             /// Owner of the test case
             /// </summary>
