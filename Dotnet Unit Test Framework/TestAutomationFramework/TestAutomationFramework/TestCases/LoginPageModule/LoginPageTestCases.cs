@@ -13,6 +13,8 @@ using TestAutomationFramework.LocatersMethods;
 using TestAutomationFramework.GlobalItems;
 using TestAutomationFramework.TestCases.LoginPageModule;
 using TestAutomationFramework.LoggerHandler;
+using TestAutomationFramework.Reporting;
+using AventStack.ExtentReports;
 
 namespace TestAutomationFramework.TestCases.LoginPageModule
 {
@@ -105,6 +107,13 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             {
                 #region Initialization
 
+                //InitializeReport.InitializeReportObject().ExtentInitialize();
+                //InitializeReport.InitializeReportObject().GetExtentReports().CreateTest("test 1").Info("Test Strted");
+
+                InitializeReport obj = new InitializeReport();
+                obj.ExtentInitialize();
+
+                obj.GetExtentReports().CreateTest("test 1").Info("Test Started");
                 #endregion
 
                 #region Working
@@ -115,9 +124,16 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Checking Assertion
 
-                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
+                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase001.LoginCategory);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
+                #endregion
+
+                #region Reporting 
+
+                //InitializeReport.InitializeReportObject().GetExtentTest().Log(Status.Pass, ExtentLogger.Passed);
+                //InitializeReport.InitializeReportObject().ExtentFlush();
+                obj.GetExtentTest().Log(Status.Pass, ExtentLogger.Passed);
                 #endregion
             }
             catch (Exception error)
@@ -139,6 +155,8 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             {
                 #region Initialization
 
+                //InitializeReport.InitializeReportObject();
+
                 #endregion
 
                 #region Working
@@ -150,7 +168,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Checking Assertion
 
-                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary());
+                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase002.LoginCategory);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
