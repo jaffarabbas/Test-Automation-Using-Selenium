@@ -38,5 +38,13 @@ namespace TestAutomationFramework.Constants
         public const string MainUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
 
         #endregion
+
+        #region Extent Report Contants
+
+        public const string ReportPath = @"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\Files\Reports\TestReport.html";
+
+        public const string ReportFilename = "TestReport.html";
+
+        #endregion
     }
 }
