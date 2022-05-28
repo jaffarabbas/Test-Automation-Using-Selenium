@@ -15,9 +15,9 @@ using TestAutomationFramework.Constants;
 using TestAutomationFramework.Reporting;
 using AventStack.ExtentReports;
 
-namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
+namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.TestFunctions
 {
-    public class LoginPageMethods : LoadDriverInitialiazer
+    public class AddEmployeePageMethods : LoadDriverInitialiazer
     {
         public void Login(Dictionary<string,string> attributes)
         {
@@ -79,5 +79,28 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 
             return null;
         }
+
+        #region ExtentReports Singleton Object
+
+        private static AddEmployeePageMethods addEmployeePageMethodsObjects;
+
+        public static AddEmployeePageMethods AddEmployeePageMethodsObjects
+        {
+            get
+            {
+                if (addEmployeePageMethodsObjects == null)
+                {
+
+                    addEmployeePageMethodsObjects = new AddEmployeePageMethods();
+                }
+                return addEmployeePageMethodsObjects;
+            }
+            set
+            {
+                addEmployeePageMethodsObjects = value;
+            }
+        }
+
+        #endregion
     }
 }
