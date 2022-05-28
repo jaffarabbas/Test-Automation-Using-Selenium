@@ -16,14 +16,14 @@ using TestAutomationFramework.LoggerHandler;
 using TestAutomationFramework.Reporting;
 using AventStack.ExtentReports;
 
-namespace TestAutomationFramework.TestCases.LoginPageModule
+namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
 {
     /// <summary>
     /// Summary description for LoginPage
     /// </summary>
     [TestClass]
 
-    public partial class LoginPageTestCases
+    public partial class AddEmployeePageTestCases
     {
         #region Instance Properties
 
@@ -67,7 +67,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             LoadDriverInitialiazer.LoadWebDriver();
             loginPageMethods = new LoginPageMethods();
             //Initialized Class Locaters
-            SetLoginLocaters();
+            SetAddEmployeeLocaters();
         }
 
         [ClassCleanup]
