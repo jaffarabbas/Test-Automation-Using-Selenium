@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using TestAutomationFramework.LocatersMethods;
 
-namespace TestAutomationFramework.TestCases.LoginPageModule
+namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
 {
     public partial class AddEmployeePageTestCases
     {
-        private static void SetLoginLocaters()
+        private static void SetAddEmployeeLocaters()
         {
             LocatorsMethods.SetLocater("dashboardByXpath", By.XPath("//*[@id='content']/div/div[1]/h1"));
             LocatorsMethods.SetLocater("invalidById",By.Id("spanMessage"));
