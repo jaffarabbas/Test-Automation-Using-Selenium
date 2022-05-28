@@ -79,5 +79,29 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 
             return null;
         }
+
+
+        #region ExtentReports Singleton Object
+
+        private static LoginPageMethods loginPageMethodsObjects;
+
+        public static LoginPageMethods LoginPageMethodsObject
+        {
+            get
+            {
+                if (loginPageMethodsObjects == null)
+                {
+
+                    loginPageMethodsObjects = new LoginPageMethods();
+                }
+                return loginPageMethodsObjects;
+            }
+            set
+            {
+                loginPageMethodsObjects = value;
+            }
+        }
+
+        #endregion
     }
 }
