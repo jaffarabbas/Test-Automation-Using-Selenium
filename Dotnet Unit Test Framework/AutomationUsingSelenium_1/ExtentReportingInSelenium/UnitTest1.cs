@@ -12,7 +12,7 @@ namespace ExtentReportingInSelenium
         public ExtentReports extentReports = null;
         public void load()
         {
-            var report = new ExtentHtmlReporter(@"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\AutomationUsingSelenium_1\ExtentReportingInSelenium\Report\report.html");
+            var report = new ExtentHtmlReporter(@"J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\AutomationUsingSelenium_1\ExtentReportingInSelenium\Report\report.html");      
             extentReports = new ExtentReports();
             extentReports.AttachReporter(report);
         }
