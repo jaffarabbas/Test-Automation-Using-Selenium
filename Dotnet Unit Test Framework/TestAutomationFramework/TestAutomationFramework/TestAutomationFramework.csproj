@@ -478,6 +478,12 @@
     <Compile Include="TestCases\LoginPageModule\LoginTestLocaters.cs" />
     <Compile Include="TestCases\LoginPageModule\TestFunctions\LoginPageMethods.cs" />
     <Compile Include="TestCases\LoginPageModule\LoginPageTestCases.cs" />
+    <Compile Include="TestCases\PIMPageModule\AddEmployeePageModule\AddEmployeePageTestCases.cs" />
+    <Compile Include="TestCases\PIMPageModule\AddEmployeePageModule\AddEmployeeTestLocaters.cs" />
+    <Compile Include="TestCases\PIMPageModule\AddEmployeePageModule\TestFunctions\AddEmployeePageMethods.cs" />
+    <Compile Include="TestCases\PIMPageModule\EmployeeListPageModule\EmployeeListPageTestCases.cs" />
+    <Compile Include="TestCases\PIMPageModule\EmployeeListPageModule\EmployeeListTestLocaters.cs" />
+    <Compile Include="TestCases\PIMPageModule\EmployeeListPageModule\TestFunctions\EmployeeListPageMethods.cs" />
     <Compile Include="Validations\Validations.cs" />
   </ItemGroup>
   <ItemGroup>
