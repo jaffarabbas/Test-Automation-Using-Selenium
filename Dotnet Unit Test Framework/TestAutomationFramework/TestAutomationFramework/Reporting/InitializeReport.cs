@@ -90,7 +90,6 @@ namespace TestAutomationFramework.Reporting
             {
                 if(initializeReport == null)
                 {
-
                     initializeReport = new InitializeReport();
                 }
                 return initializeReport;
