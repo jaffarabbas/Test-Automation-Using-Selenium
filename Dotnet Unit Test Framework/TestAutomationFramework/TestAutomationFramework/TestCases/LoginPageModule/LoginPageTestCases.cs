@@ -73,9 +73,9 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [ClassCleanup]
         public static void ClassCleanup()
         {
-            InitializeReport.InitializeReportObject.ExtentFlush();
             GlobalInstances.ClearInstancesDictionary();
             LocatorsMethods.ClearDictionary();
+            InitializeReport.InitializeReportObject.ExtentFlush();
         }
 
         [TestInitialize]
@@ -134,7 +134,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             }
             catch (Exception error)
             {
-                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
             }
         }
 
@@ -157,8 +157,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Working
 
-                //loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
-
+                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
                 loginPageMethods.LogOut();
 
                 #endregion
@@ -178,7 +177,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             }
             catch (Exception error)
             {
-                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
+                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
             }
         }
 
