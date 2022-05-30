@@ -91,7 +91,6 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
             {
                 if (loginPageMethodsObjects == null)
                 {
-
                     loginPageMethodsObjects = new LoginPageMethods();
                 }
                 return loginPageMethodsObjects;
