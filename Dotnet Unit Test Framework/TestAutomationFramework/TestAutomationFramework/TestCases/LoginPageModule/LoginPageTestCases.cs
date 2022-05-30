@@ -27,11 +27,6 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
     {
         #region Instance Properties
 
-        /// <summary>
-        /// Object instances
-        /// </summary>
-        public static LoginPageMethods loginPageMethods;
-
         #endregion
 
         #region Text Context Inititalization
@@ -65,7 +60,6 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         {
             InitializeReport.InitializeReportObject.ExtentInitialize();
             LoadDriverInitialiazer.LoadWebDriver();
-            loginPageMethods = new LoginPageMethods();
             //Initialized Class Locaters
             SetLoginLocaters();
         }
@@ -115,13 +109,13 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Working
 
-                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
+                LoginPageMethods.LoginPageMethodsObject.Login(GlobalInstances.GetInstancesDictionary());
 
                 #endregion
 
                 #region Checking Assertion
 
-                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase001.LoginCategory);
+                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase001.LoginCategory);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
@@ -134,7 +128,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
@@ -157,14 +151,14 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Working
 
-                loginPageMethods.Login(GlobalInstances.GetInstancesDictionary());
-                loginPageMethods.LogOut();
+                LoginPageMethods.LoginPageMethodsObject.Login(GlobalInstances.GetInstancesDictionary());
+                LoginPageMethods.LoginPageMethodsObject.LogOut();
 
                 #endregion
 
                 #region Checking Assertion
 
-                string actualMessage = loginPageMethods.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase002.LoginCategory);
+                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase002.LoginCategory);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
@@ -177,7 +171,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
