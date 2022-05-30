@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationUsingSelenium", "AutomationUsingSelenium_1\AutomationUsingSelenium.csproj", "{923FFDFF-BF28-4375-B810-F2534DE8F685}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRowExicution", "AutomationUsingSelenium_1\DataRowExicution.csproj", "{923FFDFF-BF28-4375-B810-F2534DE8F685}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDrivenXML", "AutomationUsingSelenium_AssertionAndDataDrivenXML\DataDrivenXML.csproj", "{766C7DBD-9E8C-4E8C-90FC-214E2B3954A6}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleBrowserExicution", "MultipleBrowserExicution\MultipleBrowserExicution.csproj", "{2049ABF3-F2C6-47E7-8CEF-376A3FA71B36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtentReportingInSelenium", "ExtentReportingInSelenium\ExtentReportingInSelenium.csproj", "{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopAppAutomation", "DesktopAppAutomation\DesktopAppAutomation.csproj", "{6A93258C-8AE9-49AB-9EC9-27B5E18AECBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{689BEAD6-C989-4FE2-BED6-9D7F02A0A7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A93258C-8AE9-49AB-9EC9-27B5E18AECBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A93258C-8AE9-49AB-9EC9-27B5E18AECBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A93258C-8AE9-49AB-9EC9-27B5E18AECBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A93258C-8AE9-49AB-9EC9-27B5E18AECBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
