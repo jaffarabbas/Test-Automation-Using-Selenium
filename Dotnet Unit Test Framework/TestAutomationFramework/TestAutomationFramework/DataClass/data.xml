@@ -31,18 +31,10 @@
       <message>LOGIN Panel</message>
       <testData>positive</testData>
     </Logout>
-    <AssignLeave>
+    <AddEmployee>
       <username>Admin</username>
       <password>admin123</password>
-      <empName>Orange Test</empName>
-      <leaveType>CAN - Personal</leaveType>
-      <fromDate>2022-05-24</fromDate>
-      <toDate>2022-05-31</toDate>
-      <partialDays>End Day Only</partialDays>
-      <duration>Specify Time</duration>
-      <durationTimeFrom>09:15</durationTimeFrom>
-      <durationTimeTo>17:00</durationTimeTo>
-      <comment>Please Assign me a Leave</comment>
-    </AssignLeave>
+      <testData>positive</testData>
+    </AddEmployee>
 	</Execution>
 </Automation>
