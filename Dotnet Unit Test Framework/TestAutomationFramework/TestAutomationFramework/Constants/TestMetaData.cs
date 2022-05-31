@@ -17,7 +17,7 @@ namespace TestAutomationFramework.Constants
             /// <summary>
             /// category of the test case
             /// </summary>
-            public const string LoginCategory = "Login";
+            public const string Category = "Login";
             /// <summary>
             /// Owner of the test case
             /// </summary>
@@ -36,7 +36,7 @@ namespace TestAutomationFramework.Constants
             /// <summary>
             /// category of the test case
             /// </summary>
-            public const string LoginCategory = "Logout";
+            public const string Category = "Logout";
             /// <summary>
             /// Owner of the test case
             /// </summary>
@@ -45,6 +45,29 @@ namespace TestAutomationFramework.Constants
             /// Description of the test case
             /// </summary>
             public const string Description = "successfull logout test";
+        }
+    }
+
+    public class AddEmployeeMetaData
+    {
+        public class TestCase001
+        {
+            /// <summary>
+            /// priority of the test case
+            /// </summary>
+            public const int Priority = 2;
+            /// <summary>
+            /// category of the test case
+            /// </summary>
+            public const string Category = "Add Empolyee";
+            /// <summary>
+            /// Owner of the test case
+            /// </summary>
+            public const string Owner = "Jaffar";
+            /// <summary>
+            /// Description of the test case
+            /// </summary>
+            public const string Description = "successfull Add employee";
         }
     }
 }
