@@ -53,7 +53,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
         {
             #region Login assertion
 
-            if (testcase == LoginTestMetaData.TestCase001.LoginCategory)
+            if (testcase == LoginTestMetaData.TestCase001.Category)
             {
                 if (Validation.CheckTestData(attributes["testData"]))
                 {
@@ -70,7 +70,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 
             #region Logout asserion
 
-            if (testcase == LoginTestMetaData.TestCase002.LoginCategory)
+            if (testcase == LoginTestMetaData.TestCase002.Category)
             {
                 return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["loginPanelTextById"]);
             }
