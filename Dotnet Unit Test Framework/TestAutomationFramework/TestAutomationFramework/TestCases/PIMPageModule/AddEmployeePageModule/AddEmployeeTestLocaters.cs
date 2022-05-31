@@ -12,7 +12,8 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
     {
         private static void SetAddEmployeeLocaters()
         {
-           
+            LocatorsMethods.SetLocater("clickPIMById", By.Id("menu_recruitment_viewJobVacancy"));
+            LocatorsMethods.SetLocater("clicAddEmployeeById", By.Id("menu_pim_addEmployee"));
         }
     }
 }
