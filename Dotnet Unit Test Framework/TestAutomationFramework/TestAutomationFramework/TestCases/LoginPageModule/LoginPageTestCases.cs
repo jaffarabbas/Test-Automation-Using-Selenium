@@ -92,7 +92,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         #region Test Cases
 
         [TestMethod]
-        [TestCategory(LoginTestMetaData.TestCase001.LoginCategory)]
+        [TestCategory(LoginTestMetaData.TestCase001.Category)]
         [Priority(LoginTestMetaData.TestCase001.Priority)]
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogin, ApplicationConstant.AccessMethod)]
         [Description(LoginTestMetaData.TestCase001.Description)]
@@ -115,7 +115,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Checking Assertion
 
-                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase001.LoginCategory);
+                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase001.Category);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
@@ -134,7 +134,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
 
         [TestMethod]
-        [TestCategory(LoginTestMetaData.TestCase002.LoginCategory)]
+        [TestCategory(LoginTestMetaData.TestCase002.Category)]
         [Priority(LoginTestMetaData.TestCase002.Priority)]
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogout, ApplicationConstant.AccessMethod)]
         [Description(LoginTestMetaData.TestCase002.Description)]
@@ -158,7 +158,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Checking Assertion
 
-                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase002.LoginCategory);
+                string actualMessage = LoginPageMethods.LoginPageMethodsObject.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), LoginTestMetaData.TestCase002.Category);
                 Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
