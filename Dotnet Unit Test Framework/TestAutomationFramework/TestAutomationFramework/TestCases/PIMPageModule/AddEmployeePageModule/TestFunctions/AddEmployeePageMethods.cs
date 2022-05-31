@@ -20,6 +20,21 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.
     public class AddEmployeePageMethods : LoadDriverInitialiazer
     {
        
+        public void AddEmployee()
+        {
+            try
+            {
+                var addEmployeeLocators = LocatorsMethods.SetByLoacator("input", "id");
+                //click navigation button
+                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMById"]);
+                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clicAddEmployeeById"]);
+            }
+            catch (Exception error)
+            {
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
+            }
+        }
+
         #region ExtentReports Singleton Object
 
         private static AddEmployeePageMethods addEmployeePageMethodsObjects;
