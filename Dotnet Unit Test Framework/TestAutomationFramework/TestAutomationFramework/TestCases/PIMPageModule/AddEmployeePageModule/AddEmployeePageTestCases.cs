@@ -19,7 +19,7 @@ using AventStack.ExtentReports;
 namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
 {
     /// <summary>
-    /// Summary description for LoginPage
+    /// Summary description for Add employee
     /// </summary>
     [TestClass]
 
