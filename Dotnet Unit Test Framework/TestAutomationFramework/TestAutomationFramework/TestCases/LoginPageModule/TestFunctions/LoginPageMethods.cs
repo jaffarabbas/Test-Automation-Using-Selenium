@@ -14,6 +14,7 @@ using TestAutomationFramework.Validations;
 using TestAutomationFramework.Constants;
 using TestAutomationFramework.Reporting;
 using AventStack.ExtentReports;
+using TestAutomationFramework.HelperMethod;
 
 namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
 {
@@ -26,11 +27,8 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
                 LocatorsMethods.RefreshPage();
                 var loginLocators = LocatorsMethods.SetByLoacator("input", "id");
                 LocatorsMethods.SetSendKeys(loginLocators["txtUsername"], attributes["username"]);
-                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild(attributes["username"]));
                 LocatorsMethods.SetSendKeys(loginLocators["txtPassword"], attributes["password"]);
-                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild(attributes["password"]));
                 LocatorsMethods.SetClick(loginLocators["btnLogin"]);
-                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.CLickedButton(loginLocators["btnLogin"].ToString()));
                 LocatorsMethods.ClearDictionary(LocatorsMethods.SetByLoacator("input", "id"));
                 LocatorsMethods.ClearDictionary(loginLocators);
             }
@@ -43,10 +41,8 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
         public void LogOut()
         {
             LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["welcomeDropdownById"]);
-            InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.CLickedButton(LocatorsMethods.GetLocater()["welcomeDropdownById"].ToString()));
-            Thread.Sleep(2000);
+            HelperMethods.Wait(WaitTime.standerdWait);
             LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["logoutBtnXpath"]);
-            InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.CLickedButton(LocatorsMethods.GetLocater()["logoutBtnXpath"].ToString()));
         }
 
         public string CheckAssertionMessage(Dictionary<string, string> attributes,string testcase)
@@ -58,6 +54,7 @@ namespace TestAutomationFramework.TestCases.LoginPage.TestFunctions
                 if (Validation.CheckTestData(attributes["testData"]))
                 {
                     return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["dashboardByXpath"]);
+
                 }
                 else
                 {
