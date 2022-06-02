@@ -24,5 +24,10 @@ namespace TestAutomationFramework.Validations
         {
             return data == TestData.PositiveTestData ? true : data == TestData.NegativeTestData ? false : false;
         }
+
+        public static bool CheckIntegers(int integer)
+        {
+            return integer >= 0 && integer.ToString() != null;
+        }
     }
 }
