@@ -1,4 +1,5 @@
-﻿using LoadDriver;
+﻿using AventStack.ExtentReports;
+using LoadDriver;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestAutomationFramework.Constants;
 using TestAutomationFramework.LoggerHandler;
+using TestAutomationFramework.Reporting;
 using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.LocatersMethods
@@ -21,10 +24,24 @@ namespace TestAutomationFramework.LocatersMethods
             try
             {
                 GetDriver().FindElement(attribute).SendKeys(value);
+                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild("Send Value " + value.ToString() + " to " +attribute.ToString() + "Locater"));
             }
             catch(Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
+            }
+        }
+
+        public static void SetSendKeys(By attribute, dynamic value)
+        {
+            try
+            {
+                GetDriver().FindElement(attribute).SendKeys(value);
+                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild("Send Value " + value.ToString() + " to " + attribute.ToString() + "Locater"));
+            }
+            catch (Exception error)
+            {
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
@@ -33,10 +50,11 @@ namespace TestAutomationFramework.LocatersMethods
             try
             {
                 GetDriver().FindElement(attribute).Click();
+                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild("Clicked Locater : "+attribute.ToString()));
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
@@ -44,11 +62,13 @@ namespace TestAutomationFramework.LocatersMethods
         {
             try
             {
-                return GetDriver().FindElement(attribute).Text;
+                string textvalue = GetDriver().FindElement(attribute).Text;
+                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild("Get Text : "+ textvalue + " from Locater : " + attribute.ToString()));
+                return textvalue;
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
                 return null;
             }
         }
@@ -58,10 +78,11 @@ namespace TestAutomationFramework.LocatersMethods
             try
             {
                 GetDriver().Navigate().Refresh();
+                InitializeReport.InitializeReportObject.CreateInfo(ExtentActions.EnterInTextFeild("Page Refreashed"));
             }
             catch (Exception error)
             {
-                LogHandler.LogHandlerObject().GetLogger().Error(error.ToString());
+                InitializeReport.InitializeReportObject.CreateLog(Status.Error, ExtentLogger.Error + error.ToString());
             }
         }
 
