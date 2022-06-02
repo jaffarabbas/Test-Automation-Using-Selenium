@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestAutomationFramework.Reporting;
 using TestAutomationFramework.Validations;
 
 namespace TestAutomationFramework.GlobalItems
@@ -15,6 +16,7 @@ namespace TestAutomationFramework.GlobalItems
         public static void SetInstancesDictionary(string key,string value)
         {
             if (!instancesDictionary.ContainsKey(key))
+
             {
                 instancesDictionary.Add(key, value);
             }
