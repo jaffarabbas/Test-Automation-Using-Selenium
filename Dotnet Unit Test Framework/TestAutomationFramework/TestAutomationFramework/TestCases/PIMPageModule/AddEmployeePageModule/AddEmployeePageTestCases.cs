@@ -49,7 +49,6 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            InitializeReport.InitializeReportObject.ExtentInitialize();
             LoadDriverInitialiazer.LoadWebDriver();
             //Initialized Class Locaters
             SetAddEmployeeLocaters();
@@ -69,6 +68,14 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
             GlobalInstances.SetInstancesDictionary("testData", TestContext.DataRow["testData"].ToString());
             GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
             GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
+            GlobalInstances.SetInstancesDictionary("firstname", TestContext.DataRow["firstname"].ToString());
+            GlobalInstances.SetInstancesDictionary("middlename", TestContext.DataRow["middlename"].ToString());
+            GlobalInstances.SetInstancesDictionary("lastname", TestContext.DataRow["lastname"].ToString());
+            GlobalInstances.SetInstancesDictionary("profile", TestContext.DataRow["profile"].ToString());
+            GlobalInstances.SetInstancesDictionary("newUsername", TestContext.DataRow["newUsername"].ToString());
+            GlobalInstances.SetInstancesDictionary("userPassword", TestContext.DataRow["userPassword"].ToString());
+            GlobalInstances.SetInstancesDictionary("confirmPassowrd", TestContext.DataRow["confirmPassowrd"].ToString());
+            GlobalInstances.SetInstancesDictionary("statusDropdown", TestContext.DataRow["statusDropdown"].ToString());
         }
 
         [TestCleanup]
@@ -87,7 +94,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfAddEmployee, ApplicationConstant.AccessMethod)]
         [Description(AddEmployeeMetaData.TestCase001.Description)]
         [Owner(AddEmployeeMetaData.TestCase001.Owner)]
-        public void TestAddEmployee003()
+        public void Test003AddEmployee()
         {
             try
             {
@@ -100,13 +107,14 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
                 #region Working
 
                 LoginPageMethods.LoginPageMethodsObject.Login(GlobalInstances.GetInstancesDictionary());
-                Thread.Sleep("5000");
-                AddEmployeePageMethods.AddEmployeePageMethodsObjects.AddEmployee();
+                AddEmployeePageMethods.AddEmployeePageMethodsObjects.AddEmployee(GlobalInstances.GetInstancesDictionary());
 
                 #endregion
 
                 #region Checking Assertion
 
+                string actualMessage = AddEmployeePageMethods.AddEmployeePageMethodsObjects.CheckAssertionMessage(GlobalInstances.GetInstancesDictionary(), AddEmployeeMetaData.TestCase001.Category);
+                Assert.AreEqual(actualMessage, GlobalInstances.GetInstancesDictionary()["message"], Errors.AssertionFailed);
 
                 #endregion
 
