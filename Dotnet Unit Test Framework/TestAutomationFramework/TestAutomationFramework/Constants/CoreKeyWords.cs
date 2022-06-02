@@ -30,6 +30,11 @@ namespace TestAutomationFramework.Constants
         public static string ByDescription = "description";
     }
 
+    public class WaitTime
+    {
+        public static int standerdWait = 5000;
+    }
+
     public class TestData
     {
         public static string PositiveTestData = "positive";
