@@ -12,8 +12,11 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
     {
         private static void SetAddEmployeeLocaters()
         {
-            LocatorsMethods.SetLocater("clickPIMById", By.Id("menu_recruitment_viewJobVacancy"));
-            LocatorsMethods.SetLocater("clicAddEmployeeById", By.Id("menu_pim_addEmployee"));
+            LocatorsMethods.SetLocater("clickPIMById", By.XPath("//*[@id='menu_pim_viewPimModule']"));
+            LocatorsMethods.SetLocater("clickAddEmployeeById", By.Id("menu_pim_addEmployee"));
+            LocatorsMethods.SetLocater("setDropdownStatusById", By.Id("status"));
+            LocatorsMethods.SetLocater("getTextAfterAddEmployee", By.XPath("//*[@id='pdMainContainer']/div[1]/h1"));
+            LocatorsMethods.SetLocater("getTextAfterInvalidTest",By.XPath("//*[@id='content']/div/div[1]/h1"));
         }
     }
 }
