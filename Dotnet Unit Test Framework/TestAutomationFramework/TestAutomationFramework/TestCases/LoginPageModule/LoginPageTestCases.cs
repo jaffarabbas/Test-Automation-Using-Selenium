@@ -46,7 +46,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
-
+            InitializeReport.InitializeReportObject.ExtentInitialize();
         }
 
         [AssemblyCleanup]
@@ -58,7 +58,6 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            InitializeReport.InitializeReportObject.ExtentInitialize();
             LoadDriverInitialiazer.LoadWebDriver();
             //Initialized Class Locaters
             SetLoginLocaters();
@@ -97,7 +96,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogin, ApplicationConstant.AccessMethod)]
         [Description(LoginTestMetaData.TestCase001.Description)]
         [Owner(LoginTestMetaData.TestCase001.Owner)]
-        public void TestLoginFunctionality001()
+        public void Test001LoginFunctionality()
         {
             try
             {
@@ -139,7 +138,7 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [DataSource(ApplicationConstant.XmlConnectionString, ApplicationConstant.XmlPath, ApplicationConstant.TestCasesOfLogout, ApplicationConstant.AccessMethod)]
         [Description(LoginTestMetaData.TestCase002.Description)]
         [Owner(LoginTestMetaData.TestCase002.Owner)]
-        public void TestLogoutFunctionality002()
+        public void Test002LogoutFunctionality()
         {
             try
             {
@@ -151,7 +150,6 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
 
                 #region Working
 
-                LoginPageMethods.LoginPageMethodsObject.Login(GlobalInstances.GetInstancesDictionary());
                 LoginPageMethods.LoginPageMethodsObject.LogOut();
 
                 #endregion
