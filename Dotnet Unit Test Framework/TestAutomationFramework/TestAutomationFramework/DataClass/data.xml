@@ -35,6 +35,14 @@
       <username>Admin</username>
       <password>admin123</password>
       <testData>positive</testData>
+      <firstname>Jaffar</firstname>
+      <middlename>Abbas</middlename>
+      <lastname>Abbas</lastname>
+      <profile>J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\Files\Images\aboutPic2.png</profile>
+      <newUsername>Jzabb</newUsername>
+      <userPassword>Jaffar123</userPassword>
+      <confirmPassowrd>Jaffar123</confirmPassowrd>
+      <statusDropdown>Enabled</statusDropdown>
     </AddEmployee>
 	</Execution>
 </Automation>
