@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRowExicution", "AutomationUsingSelenium_1\DataRowExicution.csproj", "{923FFDFF-BF28-4375-B810-F2534DE8F685}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDrivenXML", "AutomationUsingSelenium_AssertionAndDataDrivenXML\DataDrivenXML.csproj", "{766C7DBD-9E8C-4E8C-90FC-214E2B3954A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParellelTestExicution", "ParellelTestExicution\ParellelTestExicution.csproj", "{562F8FD5-E942-43F1-A529-6943E98A28FC}"
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{923FFDFF-BF28-4375-B810-F2534DE8F685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{923FFDFF-BF28-4375-B810-F2534DE8F685}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{923FFDFF-BF28-4375-B810-F2534DE8F685}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{923FFDFF-BF28-4375-B810-F2534DE8F685}.Release|Any CPU.Build.0 = Release|Any CPU
 		{766C7DBD-9E8C-4E8C-90FC-214E2B3954A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{766C7DBD-9E8C-4E8C-90FC-214E2B3954A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{766C7DBD-9E8C-4E8C-90FC-214E2B3954A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
