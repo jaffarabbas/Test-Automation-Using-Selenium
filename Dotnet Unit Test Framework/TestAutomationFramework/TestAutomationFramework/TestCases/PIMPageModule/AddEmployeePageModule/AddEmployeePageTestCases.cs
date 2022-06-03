@@ -76,6 +76,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
             GlobalInstances.SetInstancesDictionary("userPassword", TestContext.DataRow["userPassword"].ToString());
             GlobalInstances.SetInstancesDictionary("confirmPassowrd", TestContext.DataRow["confirmPassowrd"].ToString());
             GlobalInstances.SetInstancesDictionary("statusDropdown", TestContext.DataRow["statusDropdown"].ToString());
+            GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
         }
 
         [TestCleanup]
