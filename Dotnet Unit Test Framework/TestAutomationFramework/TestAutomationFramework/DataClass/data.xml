@@ -43,6 +43,7 @@
       <userPassword>Jaffar123</userPassword>
       <confirmPassowrd>Jaffar123</confirmPassowrd>
       <statusDropdown>Enabled</statusDropdown>
+      <message>Personal Details</message>
     </AddEmployee>
 	</Execution>
 </Automation>
