@@ -27,7 +27,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.
             {
                 LocatorsMethods.RefreshPage();
                 //click navigation button
-                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMByIdFromList"]);
+                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMById"]);
                 LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickAddEmployeeById"]);
                 HelperMethods.Wait(WaitTime.standerdWait);
                 var addEmployeeLocators = LocatorsMethods.SetByLoacator("input", "id");
