@@ -31,6 +31,7 @@ namespace TestAutomationFramework.Constants
         public const string TestCasesOfLogin = "Login";
         public const string TestCasesOfLogout = "Logout";
         public const string TestCasesOfAddEmployee = "AddEmployee";
+        public const string TestCasesOfEmployeeList = "EmployeeList";
 
         #endregion
 
