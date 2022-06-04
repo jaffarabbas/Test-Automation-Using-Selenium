@@ -70,4 +70,27 @@ namespace TestAutomationFramework.Constants
             public const string Description = "successfull Add employee";
         }
     }
+
+    public class EmployeeListMetaData
+    {
+        public class TestCase001
+        {
+            /// <summary>
+            /// priority of the test case
+            /// </summary>
+            public const int Priority = 3;
+            /// <summary>
+            /// category of the test case
+            /// </summary>
+            public const string Category = "Empolyee List";
+            /// <summary>
+            /// Owner of the test case
+            /// </summary>
+            public const string Owner = "Jaffar";
+            /// <summary>
+            /// Description of the test case
+            /// </summary>
+            public const string Description = "successfull Search employee";
+        }
+    }
 }
