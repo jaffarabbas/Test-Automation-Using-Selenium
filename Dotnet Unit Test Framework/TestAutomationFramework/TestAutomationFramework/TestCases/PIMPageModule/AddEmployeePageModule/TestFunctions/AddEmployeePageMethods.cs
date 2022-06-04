@@ -27,7 +27,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.
             {
                 LocatorsMethods.RefreshPage();
                 //click navigation button
-                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMById"]);
+                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMByIdFromList"]);
                 LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickAddEmployeeById"]);
                 HelperMethods.Wait(WaitTime.standerdWait);
                 var addEmployeeLocators = LocatorsMethods.SetByLoacator("input", "id");
@@ -46,7 +46,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.
                 LocatorsMethods.SetSendKeys(addEmployeeLocators["re_password"], attributes["confirmPassowrd"]);
                 LocatorsMethods.SetSendKeys(LocatorsMethods.GetLocater()["setDropdownStatusById"], attributes["statusDropdown"]);
                 LocatorsMethods.SetClick(addEmployeeLocators["btnSave"]);
-               
+
                 #endregion
             }
             catch (Exception error)
@@ -61,8 +61,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.
             {
                 if (Validation.CheckTestData(attributes["testData"]))
                 {
-                    return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["getTextAfterAddEmployee"]);
-
+                    return LocatorsMethods.GetText(LocatorsMethods.GetLocater()["personal_txtEmpFirstName"]);
                 }
                 else
                 {
