@@ -17,6 +17,7 @@ using TestAutomationFramework.LoggerHandler;
 using TestAutomationFramework.Reporting;
 using AventStack.ExtentReports;
 using TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule.TestFunctions;
+using TestAutomationFramework.HelperMethod;
 
 namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
 {
@@ -58,8 +59,8 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
         public static void ClassCleanup()
         {
             GlobalInstances.ClearInstancesDictionary();
-            LocatorsMethods.ClearDictionary();
             InitializeReport.InitializeReportObject.ExtentFlush();
+            LocatorsMethods.ClearDictionary();
         }
 
         [TestInitialize]
@@ -109,6 +110,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.AddEmployeePageModule
 
                 LoginPageMethods.LoginPageMethodsObject.Login(GlobalInstances.GetInstancesDictionary());
                 AddEmployeePageMethods.AddEmployeePageMethodsObjects.AddEmployee(GlobalInstances.GetInstancesDictionary());
+                HelperMethods.Wait(WaitTime.standerdWait);
 
                 #endregion
 
