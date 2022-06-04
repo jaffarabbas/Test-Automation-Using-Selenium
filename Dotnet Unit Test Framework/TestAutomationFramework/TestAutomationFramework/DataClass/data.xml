@@ -43,7 +43,14 @@
       <userPassword>Jaffar123</userPassword>
       <confirmPassowrd>Jaffar123</confirmPassowrd>
       <statusDropdown>Enabled</statusDropdown>
-      <message>Personal Details</message>
+      <message>Jaffar</message>
     </AddEmployee>
+    <EmployeeList>
+      <username>Admin</username>
+      <password>admin123</password>
+      <searchName>Jaffar</searchName>
+      <testData>positive</testData>
+      <message>Successfully Deleted</message>
+    </EmployeeList>
 	</Execution>
 </Automation>
