@@ -26,7 +26,7 @@ namespace TestAutomationFramework.TestCases.PIMPageModule.EmployeeListPageModule
             {
                 LocatorsMethods.RefreshPage();
                 //click navigation button
-                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMById"]);
+                LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickPIMByIdFromList"]);
                 LocatorsMethods.SetClick(LocatorsMethods.GetLocater()["clickEmployeeList"]);
                 HelperMethods.Wait(WaitTime.standerdWait);
                 LocatorsMethods.SetSendKeys(LocatorsMethods.GetLocater()["empsearch_employee_name_empName"], attributes["searchName"]);
