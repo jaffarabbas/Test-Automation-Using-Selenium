@@ -47,7 +47,6 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [ClassInitialize]
         public static void ClassInit(TestContext context)
         {
-            InitializeReport.InitializeReportObject.ExtentInitialize();
             LoadDriverInitialiazer.LoadWebDriver();
             //Initialized Class Locaters
             SetEmployeeListLocaters();
