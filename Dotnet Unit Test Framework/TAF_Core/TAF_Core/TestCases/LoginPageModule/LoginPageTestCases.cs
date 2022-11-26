@@ -7,7 +7,6 @@ using System.Text;
 using TestAutomationFramework.TestCases.LoginPage.TestFunctions;
 using LoadDriver;
 using TestAutomationFramework.Constants;
-using System.Windows.Forms;
 using System.Data;
 using TestAutomationFramework.LocatersMethods;
 using TestAutomationFramework.GlobalItems;
@@ -72,9 +71,9 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         }
 
         [TestInitialize]
-        public void TestInit()
+        public void TestInit() 
         {
-            GlobalInstances.SetInstancesDictionary("testData", TestContext.DataRow["testData"].ToString());
+            GlobalInstances.SetInstancesDictionary("testData", instance.DataRow["testData"].ToString());
             GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
             GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
             GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
