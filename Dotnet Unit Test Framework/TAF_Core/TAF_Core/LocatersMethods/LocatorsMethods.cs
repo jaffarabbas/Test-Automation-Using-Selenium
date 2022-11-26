@@ -7,7 +7,6 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using TestAutomationFramework.Constants;
 using TestAutomationFramework.LoggerHandler;
 using TestAutomationFramework.Reporting;
