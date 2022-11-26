@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using TestAutomationFramework.Constants;
 using TestAutomationFramework.LoggerHandler;
 
@@ -22,7 +21,7 @@ namespace TestAutomationFramework.Reporting
         {
             try
             {
-                var report = new ExtentHtmlReporter(ApplicationConstant.ReportPath + ApplicationConstant.ReportFilename);
+                var report = new  ExtentSparkReporter(ApplicationConstant.ReportPath + ApplicationConstant.ReportFilename);
                 extentReports = new ExtentReports();
                 extentReports.AttachReporter(report);
             }
