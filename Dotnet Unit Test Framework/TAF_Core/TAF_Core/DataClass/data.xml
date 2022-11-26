@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Automation>
+	<Execution>
+		<Login>
+			<username></username>
+			<password>admin123</password>
+			<message>Username cannot be empty</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
+			<username>Jaffar</username>
+			<password></password>
+			<message>Password cannot be empty</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
+			<username>Jaffar</username>
+			<password>admin123</password>
+			<message>Invalid credentials</message>
+			<testData>negative</testData>
+		</Login>
+		<Login>
+			<username>Admin</username>
+			<password>admin123</password>
+			<message>Dashboard</message>
+  		<testData>positive</testData>
+		</Login>
+    <Logout>
+      <username>Admin</username>
+      <password>admin123</password>
+      <message>LOGIN Panel</message>
+      <testData>positive</testData>
+    </Logout>
+    <AddEmployee>
+      <username>Admin</username>
+      <password>admin123</password>
+      <testData>positive</testData>
+      <firstname>Jaffar</firstname>
+      <middlename>Abbas</middlename>
+      <lastname>Abbas</lastname>
+      <profile>J:\Github\Test-Automation-Using-Selenium\Dotnet Unit Test Framework\TestAutomationFramework\TestAutomationFramework\Files\Images\aboutPic2.png</profile>
+      <newUsername>Jzabb</newUsername>
+      <userPassword>Jaffar123</userPassword>
+      <confirmPassowrd>Jaffar123</confirmPassowrd>
+      <statusDropdown>Enabled</statusDropdown>
+      <message>Jaffar</message>
+    </AddEmployee>
+    <EmployeeList>
+      <username>Admin</username>
+      <password>admin123</password>
+      <searchName>Jaffar</searchName>
+      <testData>positive</testData>
+      <message>Successfully Deleted</message>
+    </EmployeeList>
+	</Execution>
+</Automation>
