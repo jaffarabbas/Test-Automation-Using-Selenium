@@ -1,7 +1,11 @@
 package org.example;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 
 public class TestAccount {
 
@@ -16,8 +20,8 @@ public class TestAccount {
 
 
 //Rahim's Account
-        Assert.assertEquals(12000, Rahim.getBalance());
-        Assert.assertNotEquals(21000, Rahim.getBalance());
+        assertEquals(12000, Rahim.getBalance());
+        assertNotEquals(21000, Rahim.getBalance());
 
 //Eibad's Account
         Assert.assertEquals(35000,Rahim.getBalance());
