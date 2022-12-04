@@ -73,10 +73,10 @@ namespace TestAutomationFramework.TestCases.LoginPageModule
         [TestInitialize]
         public void TestInit() 
         {
-            GlobalInstances.SetInstancesDictionary("testData", instance.DataRow["testData"].ToString());
-            GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
-            GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
-            GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
+            GlobalInstances.SetInstancesDictionary("testData", TestContext.DataRow["testData"].ToString());
+            // GlobalInstances.SetInstancesDictionary("username", TestContext.DataRow["username"].ToString());
+            // GlobalInstances.SetInstancesDictionary("password", TestContext.DataRow["password"].ToString());
+            // GlobalInstances.SetInstancesDictionary("message", TestContext.DataRow["message"].ToString());
         }
 
         [TestCleanup]
