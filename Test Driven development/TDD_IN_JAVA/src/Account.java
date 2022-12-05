@@ -7,7 +7,6 @@ public class Account {
     String fname;
     String  lname;
 
-
     public Account(String owner, long balance, int pin, int CNIC, String fname, String lname) {
         this.owner = owner;
         this.balance = balance;
@@ -16,7 +15,6 @@ public class Account {
         this.fname = fname;
         this.lname = lname;
     }
-
     public long getBalance() {
         return balance;
     }
