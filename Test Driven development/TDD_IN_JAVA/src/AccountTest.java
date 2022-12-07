@@ -112,6 +112,23 @@ public class AccountTest {
         Assert.assertTrue(Rahim.getBalance() == 12000+1000);
     }
 
+    @Test
+    public void checkCardsNames(){
+        Account Rahim = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Account Samin = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Rahim.addCard(new Card("VisaCard","123456789"));
+        Samin.addCard(new Card("MasterCard","123456789"));
+        Assert.assertEquals("VisaCard",Rahim.card.getCardType());
+        Assert.assertEquals("MasterCard",Samin.card.getCardType());
+    }
 
-
+    @Test
+    public void checkCardLimit(){
+        Account Rahim = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Account Samin = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Rahim.addCard(new Card("VisaCard","123456789"));
+        Samin.addCard(new Card("MasterCard","123456789"));
+        Assert.assertEquals(100000,Rahim.card.getLimit());
+        Assert.assertEquals(50000,Samin.card.getLimit());
+    }
 }
