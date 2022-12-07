@@ -4,5 +4,6 @@ public class Main {
         //creating card object
         Rahim.addCard(new Card("VisaCard","123456789"));
         System.out.println(Rahim.card.getLimit());
+        Rahim.card.useCard(110000);
     }
 }

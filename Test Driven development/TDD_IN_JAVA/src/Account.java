@@ -115,4 +115,12 @@ class Card{
     public void setNewCardInCardsMap(String cardType, int limit){
         cardTypes.put(cardType, limit);
     }
+    public void useCard(int value){
+        if (value <= limit){
+            limit-=value;
+            System.out.println("Transaction Successful Of Amount: "+value+"\n Remaining Limit: "+limit);
+        }else{
+            System.out.println("You have exceeded your limit you can only use: "+limit);
+        }
+    }
 }

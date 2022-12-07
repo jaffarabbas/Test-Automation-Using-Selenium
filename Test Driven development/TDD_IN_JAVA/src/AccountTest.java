@@ -131,4 +131,28 @@ public class AccountTest {
         Assert.assertEquals(100000,Rahim.card.getLimit());
         Assert.assertEquals(50000,Samin.card.getLimit());
     }
+
+    @Test
+    public void checkCardLimitAfterUse(){
+        Account Rahim = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Account Samin = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Rahim.addCard(new Card("VisaCard","123456789"));
+        Samin.addCard(new Card("MasterCard","123456789"));
+        Rahim.card.useCard(1000);
+        Samin.card.useCard(1000);
+        Assert.assertEquals(99000,Rahim.card.getLimit());
+        Assert.assertEquals(49000,Samin.card.getLimit());
+    }
+
+    @Test
+    public void checkIfCardLimitExceed(){
+        Account Rahim = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Account Samin = new Account("Rahim", 12000, 2345, 23,"Samin", "tariq");
+        Rahim.addCard(new Card("VisaCard","123456789"));
+        Samin.addCard(new Card("MasterCard","123456789"));
+        Rahim.card.useCard(100001);
+        Samin.card.useCard(50001);
+        Assert.assertEquals(100000,Rahim.card.getLimit());
+        Assert.assertEquals(50000,Samin.card.getLimit());
+    }
 }
