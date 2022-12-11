@@ -115,6 +115,8 @@ class Card{
     public void setNewCardInCardsMap(String cardType, int limit){
         cardTypes.put(cardType, limit);
     }
+
+    //reduse card limit when use it
     public void useCard(int value){
         if (value <= limit){
             limit-=value;
